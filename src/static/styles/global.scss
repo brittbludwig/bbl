@@ -1,0 +1,26 @@
+.input-field {
+  border: 0;
+  border-radius: 15px;
+  color: $gray-600;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 10px 0 0;
+  padding: 6px 10px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.text {
+  color: $white;
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: $font-weight-heavy;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  padding: 6px 10px;
+  text-shadow: 1px 1px 8px rgba($black, 0.8);
+}

@@ -1,0 +1,112 @@
+// Fade In
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Pulse
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  30% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(30deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+// In From Left
+@keyframes moveFromLeft {
+  0% {
+    bottom: -60%;
+    left: -100%;
+    transform: rotate(10deg) scale(1);
+  }
+  40% {
+    bottom: 0%;
+    left: 0%;
+    transform: rotate(10deg) scale(1.5);
+  }
+  60% {
+    bottom: 60%;
+    left: 100%;
+    transform: rotate(10deg) scale(0.5);
+  }
+  80% {
+    bottom: 60%;
+    left: 100%;
+    transform: rotate(10deg) scale(0.5);
+  }
+  100% {
+    bottom: 120%;
+    left: 200%;
+    transform: rotate(10deg) scale(0.1);
+  }
+}
+
+// In From Right
+@keyframes moveFromRight {
+  0% {
+    bottom: -60%;
+    left: 200%;
+    transform: rotate(-100deg) scale(1);
+  }
+  40% {
+    bottom: 0%;
+    left: 100%;
+    transform: rotate(-100deg) scale(1.5);
+  }
+  60% {
+    bottom: 60%;
+    left: 0%;
+    transform: rotate(-100deg) scale(0.5);
+  }
+  100% {
+    bottom: 120%;
+    left: -200%;
+    transform: rotate(-100deg) scale(0.1);
+  }
+}
+
+// In From Left Flip
+@keyframes moveFromLeftFlip {
+  0% {
+    left: -20%;
+    transform: scaleX(-1);
+  }
+  20% {
+    left: 0%;
+    transform: scaleX(-1);
+  }
+  40% {
+    left: 25%;
+    transform: scaleX(-1);
+  }
+  59% {
+    transform: scaleX(-1);
+  }
+  60% {
+    left: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    left: -120%;
+    transform: scaleX(1);
+  }
+}
