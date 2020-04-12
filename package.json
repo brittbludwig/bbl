@@ -9,8 +9,10 @@
     "eslint-config-react-app": "5.2.1",
     "husky": "4.2.3",
     "lint-staged": "10.0.9",
+    "node-sass": "4.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-router-hash-link": "1.2.2",
     "react-scripts": "3.4.1"
   },
   "lint-staged": {
@@ -20,6 +22,7 @@
   },
   "scripts": {
     "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
+    "lint": "stylelint 'src/**/*.scss'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -54,6 +57,9 @@
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "2.5.1",
-    "prettier": "2.0.2"
+    "prettier": "2.0.2",
+    "react-icons": "^3.9.0",
+    "stylelint": "13.2.1",
+    "stylelint-config-recommended": "3.0.0"
   }
 }

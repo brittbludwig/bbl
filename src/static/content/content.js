@@ -17,7 +17,7 @@ const SectionContent = {
       jobs: [
         {
           place: "ConsumerTrack",
-          date: "10/2019 - Present",
+          date: "10/2019 - 03/2020",
         },
         {
           place: "Deloitte Digital",
@@ -123,10 +123,6 @@ const SectionContent = {
       },
       {
         name: "Stylus",
-        type: "libraries",
-      },
-      {
-        name: "Electrode",
         type: "libraries",
       },
       {
@@ -278,13 +274,7 @@ const SectionContent = {
     ],
   },
   section6: {
-    content: [
-      {
-        text:
-          "Have a WordPress site? I've built a countless of WordPress sites in my time as a developer, both customizing existing themes and building custom themes from scratch. I'm also well-versed in site/database migration and can help you very quickly get set up with everything starting with buying your domain name.",
-      },
-      { text: "Pick an adjective" },
-    ],
+    content: [{ text: "Pick an adjective" }],
   },
   section7: {
     inspiration: ["David Bowie", "Prince", "Bob Ross"],

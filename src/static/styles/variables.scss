@@ -1,3 +1,6 @@
+@import url("//fonts.googleapis.com/css?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("//fonts.googleapis.com/css?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 // colors
 $gray-300: #333;
 $gray-600: #666;
@@ -6,34 +9,18 @@ $gray-bbb: #bbb;
 $gray-ccc: #ccc;
 $gray-ddd: #ddd;
 
-$dark-blue: #99f7ff;
-$dark-green: #99ffdd;
-$dark-orange: #ffc299;
-$dark-purple: #a199ff;
-$dark-pink: #ff99fc;
-$dark-pink-orange: #ff9999;
-$dark-yellow: #fff699;
-
-$light-blue: #ccdeff;
-$light-green: #ccffee;
-$light-green-blue: #ccfbff;
-$light-orange: #ffe0cc;
-$light-pink: #ffd9fe;
-$light-pink-orange: #ffcccc;
-$light-purple: #d0ccff;
-$light-yellow: #fffbcc;
-
-$water-blue-light: #a5e2fe;
-$water-blue-dark: #0a94d0;
-
-$medium-pink: #ccadcb;
-$medium-pink-orange: #ffcccc;
+$dark-blue: #1b61ff;
+$dark-green: #1af7ff;
+$dark-orange: #ff861a;
+$dark-purple: #7123ff;
+$dark-pink: #f221ff;
+$dark-yellow: #ffec1a;
 
 $white: #fff;
 $black: #000;
 
 // fonts
-$font-family: "poppins", sans-serif;
+$font-family: "B612", sans-serif;
 $font-weight-heavy: 700;
 $font-weight-normal: 500;
 $font-weight-light: 300;
