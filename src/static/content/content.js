@@ -1,5 +1,7 @@
-const SectionContent = {
-  section1: {
+const content = [
+  {
+    name: "Intro",
+    id: "section1",
     header: "Hi there.",
     content: [
       { text: "My name is Brittany." },
@@ -10,7 +12,9 @@ const SectionContent = {
       { text: "What's your name?" },
     ],
   },
-  section2: {
+  {
+    name: "Resume",
+    id: "section2",
     resume: {
       header: "Places I've worked",
       content: [{ text: "What is your job?" }],
@@ -42,7 +46,9 @@ const SectionContent = {
       ],
     },
   },
-  section3: {
+  {
+    name: "Skills",
+    id: "section3",
     header: "Skills",
     content: [
       { text: "Click the ones you need help with" },
@@ -235,7 +241,9 @@ const SectionContent = {
       },
     ],
   },
-  section4: {
+  {
+    name: "Clients",
+    id: "section4",
     clients: [
       "Walmart",
       "Humana",
@@ -260,7 +268,9 @@ const SectionContent = {
     ],
     content: [{ text: "Pick an adverb" }],
   },
-  section5: {
+  {
+    name: "About",
+    id: "section5",
     content: [
       {
         text:
@@ -273,12 +283,16 @@ const SectionContent = {
       { text: "Pick a noun" },
     ],
   },
-  section6: {
+  {
+    name: "Links",
+    id: "section6",
     content: [{ text: "Pick an adjective" }],
   },
-  section7: {
+  {
+    name: "Contact",
+    id: "section7",
     inspiration: ["David Bowie", "Prince", "Bob Ross"],
   },
-};
+];
 
-export default SectionContent;
+export default content;

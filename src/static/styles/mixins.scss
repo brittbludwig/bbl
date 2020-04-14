@@ -1,3 +1,7 @@
-@mixin background-gradient($from, $to) {
-  background: linear-gradient(180deg, $from 0%, $to 100%);
+@mixin activeSection($color) {
+  .Navigation__close-icon {
+    span {
+      background-color: $color;
+    }
+  }
 }

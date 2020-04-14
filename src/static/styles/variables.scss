@@ -1,7 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("//fonts.googleapis.com/css?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-// colors
+// Colors
 $gray-300: #333;
 $gray-600: #666;
 $gray-900: #999;
@@ -10,17 +10,29 @@ $gray-ccc: #ccc;
 $gray-ddd: #ddd;
 
 $dark-blue: #1b61ff;
+$dark-blue-purple: #314aff;
 $dark-green: #1af7ff;
 $dark-orange: #ff861a;
 $dark-purple: #7123ff;
+$dark-purple-pink: #a821ff;
 $dark-pink: #f221ff;
 $dark-yellow: #ffec1a;
+
+$light-blue: #1ab1ff;
 
 $white: #fff;
 $black: #000;
 
-// fonts
+// Fonts
 $font-family: "B612", sans-serif;
 $font-weight-heavy: 700;
 $font-weight-normal: 500;
 $font-weight-light: 300;
+
+// Text Styles
+$font-color-global: rgba($black, 0.8);
+$text-shadow: rgba($black, 0.8);
+
+// Section Colors
+$sectionColors: $dark-purple-pink $dark-pink $dark-orange $light-blue $dark-blue
+  $dark-blue-purple;
