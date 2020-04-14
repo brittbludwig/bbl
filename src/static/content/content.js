@@ -1,4 +1,4 @@
-const SectionContent = [
+const content = [
   {
     name: "Intro",
     id: "section1",
@@ -295,4 +295,4 @@ const SectionContent = [
   },
 ];
 
-export default SectionContent;
+export default content;

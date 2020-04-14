@@ -1,9 +1,7 @@
 @mixin activeSection($color) {
-  .nav-icon {
-    .open {
-      .bar {
-        background-color: $color;
-      }
+  .Navigation__close-icon {
+    span {
+      background-color: $color;
     }
   }
 }

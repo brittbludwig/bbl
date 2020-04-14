@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import {
   Container,
@@ -8,13 +8,17 @@ import {
   NavbarToggler,
   Collapse,
 } from "reactstrap";
-import SectionContent from "../../static/content/content";
+import content from "../../static/content/content";
+import labels from "../../static/labels/labels";
+import { store } from "../../store/store";
 
 const Navigation = () => {
+  const globalState = useContext(store);
+
   const [isNavOpen, setNavOpen] = useState(false);
   const toggleNav = () => setNavOpen(!isNavOpen);
 
-  const sections = Object.values(SectionContent);
+  const sections = Object.values(content);
   let template = [];
   sections.forEach((section, index) => {
     if (index > 0) {
@@ -38,11 +42,20 @@ const Navigation = () => {
               to="/#section1"
               className="Navigation__link Navigation__link--home"
             >
-              BrittanyLudwig.com
+              {labels.siteTitle}
             </Link>
           </Col>
           <Col xs="2" md="9">
-            <Navbar className="Navigation__bar" light expand="lg" id="navbar">
+            <Navbar
+              className={`Navigation__bar ${
+                globalState.state.activeSection
+                  ? "Navigation__bar--" + globalState.state.activeSection
+                  : ""
+              }`}
+              light
+              expand="lg"
+              id="navbar"
+            >
               <NavbarToggler onClick={toggleNav}>
                 <div
                   className={`Navigation__close-icon ${

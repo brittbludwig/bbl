@@ -1,6 +1,8 @@
 import React, { createContext, useReducer } from "react";
 
-export const initialState = {};
+export const initialState = {
+  activeSection: "",
+};
 
 const store = createContext(initialState);
 const { Provider } = store;

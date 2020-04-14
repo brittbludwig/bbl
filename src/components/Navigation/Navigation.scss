@@ -9,6 +9,12 @@
   &__bar {
     justify-content: flex-end;
     padding: 0.75rem 0;
+
+    @for $i from 1 through 6 {
+      &--section#{$i} {
+        @include activeSection(nth($sectionColors, $i));
+      }
+    }
   }
 
   &__links {
