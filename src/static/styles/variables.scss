@@ -33,6 +33,10 @@ $font-weight-light: 300;
 $font-color-global: rgba($black, 0.8);
 $text-shadow: rgba($black, 0.8);
 
+// z-indexes
+$background-z-index: 0;
+$navigation-z-index: 3;
+
 // Section Colors
 $sectionColors: $dark-purple-pink $dark-pink $dark-orange $light-blue $dark-blue
   $dark-blue-purple;

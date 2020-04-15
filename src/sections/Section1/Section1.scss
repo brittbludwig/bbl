@@ -1,0 +1,13 @@
+.Section1 {
+  @include sectionStyles();
+  margin-top: 60px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 80px;
+  }
+
+  &__background {
+    @include backgroundStyles();
+    background: linear-gradient($dark-purple, $dark-purple-pink);
+  }
+}

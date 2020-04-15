@@ -2,6 +2,7 @@ import React, { createContext, useReducer } from "react";
 
 export const initialState = {
   activeSection: "",
+  starDensity: 30,
 };
 
 const store = createContext(initialState);
