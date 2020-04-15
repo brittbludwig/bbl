@@ -10,4 +10,10 @@
     @include backgroundStyles();
     background: linear-gradient($dark-purple, $dark-purple-pink);
   }
+
+  &__column {
+    @include media-breakpoint-up(lg) {
+      min-height: $min-section-height;
+    }
+  }
 }

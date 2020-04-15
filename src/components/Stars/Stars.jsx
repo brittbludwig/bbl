@@ -37,8 +37,6 @@ const Stars = () => {
     const animateToH = randomNumber(100, 500);
     const animateToW = randomNumber(100, 500);
 
-    console.log(isShootingStar);
-
     const styles = {
       top: `${positionTop}%`,
       left: `${positionLeft}%`,
@@ -54,8 +52,6 @@ const Stars = () => {
       <img key={key} src={item} className="Stars__star" style={styles} alt="" />
     );
   });
-
-  console.log("nightSky", nightSky);
 
   return <div className="Stars">{nightSky}</div>;
 };

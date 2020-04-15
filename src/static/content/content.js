@@ -4,13 +4,11 @@ const content = [
     id: "section1",
     header: "Hi there.",
     content: [
-      { text: "My name is Brittany." },
-      {
-        text:
-          "I'm a front end engineer living in Los Angeles with 10 years industry experience.",
-      },
-      { text: "What's your name?" },
+      "Hi.",
+      "My name is Brittany.",
+      "I'm a front end engineer living in Los Angeles with 10 years industry experience.",
     ],
+    formText: "What's your name?",
   },
   {
     name: "Resume",
