@@ -4,10 +4,7 @@ import Interweave from "interweave";
 const ContentBox = ({ content }) => {
   let template = [];
   content.forEach((item, index) => {
-    const block =
-      index === 0
-        ? `<h2>${item}</h2>`
-        : `<p className="ContentBox__text">${item}</p>`;
+    const block = index === 0 ? `<h2>${item}</h2>` : `<p>${item}</p>`;
     template.push(block);
   });
 

@@ -10,7 +10,3 @@ export const sections = {
   section5: "section5",
   section6: "section6",
 };
-
-export const stateActions = {
-  UPDATE_PLAYER0: "UPDATE_PLAYER0",
-};

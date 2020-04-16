@@ -51,14 +51,7 @@ const Navigation = () => {
             </Link>
           </Col>
           <Col xs="2" md="9">
-            <Navbar
-              className={`Navigation__bar ${
-                activeSection ? "Navigation__bar--" + activeSection : ""
-              }`}
-              light
-              expand="lg"
-              id="navbar"
-            >
+            <Navbar className="Navigation__bar" light expand="lg" id="navbar">
               <NavbarToggler onClick={toggleNav}>
                 <div
                   className={`Navigation__close-icon ${

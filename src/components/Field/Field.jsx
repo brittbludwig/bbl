@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { store } from "../../store/store";
+import { stateActions } from "../../static/labels/labels";
 
 const Field = ({ section }) => {
   const globalState = useContext(store);
@@ -18,11 +19,7 @@ const Field = ({ section }) => {
 
   return (
     <div className="Field">
-      <input
-        className="Field__input"
-        type="text"
-        onChange={(e) => handleChange(e.target.value)}
-      ></input>
+      <input type="text" onChange={(e) => handleChange(e.target.value)}></input>
     </div>
   );
 };

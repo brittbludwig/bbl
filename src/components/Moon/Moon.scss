@@ -1,8 +1,10 @@
 .Moon {
+  margin-top: -10%;
   margin-right: -5%;
   height: 150px;
 
   @include media-breakpoint-up(md) {
+    margin-top: 0%;
     margin-right: 0%;
     height: 200px;
   }

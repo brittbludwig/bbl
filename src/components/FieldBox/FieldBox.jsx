@@ -5,7 +5,9 @@ import Field from "../Field/Field";
 const FieldBox = ({ fieldText, section }) => {
   return (
     <div className="FieldBox">
-      <Interweave content={fieldText}></Interweave>
+      <div className="FieldBox__text">
+        <Interweave content={fieldText}></Interweave>
+      </div>
       <div className="FieldBox__field">
         <Field section={section} />
       </div>

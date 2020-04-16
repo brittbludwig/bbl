@@ -9,6 +9,13 @@
     min-width: 16rem;
   }
 
+  &__text {
+    font-size: 1rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1.25rem;
+    }
+  }
+
   &__field {
     position: absolute;
     bottom: -1.5rem;
