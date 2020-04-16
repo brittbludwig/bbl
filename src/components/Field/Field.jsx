@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { store } from "../../store/store";
 
 const Field = ({ section }) => {
@@ -13,8 +13,6 @@ const Field = ({ section }) => {
         [activeField]: value,
       };
       dispatch({ type: "UPDATE_FIELDS", formFields: newFieldSet });
-
-      console.log(globalState);
     }
   };
 
