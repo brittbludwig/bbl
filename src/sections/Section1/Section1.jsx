@@ -19,7 +19,7 @@ const Section1 = () => {
           <Col
             xs={12}
             lg={6}
-            className="d-flex align-items-center align-items-lg-start justify-content-center flex-column  order-2 order-lg-1 Section1__column"
+            className="d-flex align-items-center align-items-lg-start justify-content-center flex-column order-2 order-lg-1 Section1__column"
           >
             <div className="Section1__content">
               <ContentBox content={sectionContent} />
@@ -31,7 +31,7 @@ const Section1 = () => {
           <Col
             xs={12}
             lg={6}
-            className="d-flex align-items-end justify-content-end  order-1 order-lg-2 Section1__column"
+            className="d-flex align-items-end justify-content-end order-1 order-lg-2 Section1__column"
           >
             <Moon />
           </Col>
