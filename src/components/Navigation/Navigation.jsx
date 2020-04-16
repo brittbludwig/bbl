@@ -9,7 +9,7 @@ import {
   Collapse,
 } from "reactstrap";
 import content from "../../static/content/content";
-import { navigation } from "../../static/labels/labels";
+import { navigation, sections } from "../../static/labels/labels";
 import { store } from "../../store/store";
 
 const Navigation = () => {
@@ -19,13 +19,13 @@ const Navigation = () => {
   const [isNavOpen, setNavOpen] = useState(false);
   const toggleNav = () => setNavOpen(!isNavOpen);
 
-  const sections = Object.values(content);
+  const pageSections = Object.values(content);
   let template = [];
-  sections.forEach((section, index) => {
+  pageSections.forEach((section, index) => {
     if (index > 0) {
       template.push(
         <li className="Navigation__menu-item" key={section.id}>
-          <Link smooth to={section.id} className="Navigation__link">
+          <Link smooth to={`#${section.id}`} className="Navigation__link">
             {section.name}
           </Link>
         </li>
@@ -44,7 +44,7 @@ const Navigation = () => {
           <Col xs="10" md="3">
             <Link
               smooth
-              to="/#section1"
+              to={`#${sections.section1}`}
               className="Navigation__link Navigation__link--home"
             >
               {navigation.siteTitle}

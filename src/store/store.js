@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 
 export const initialState = {
-  activeSection: "section1",
+  activeSection: "section2",
   starDensity: 30,
   formFields: {
     section1: "",

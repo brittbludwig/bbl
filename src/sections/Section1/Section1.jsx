@@ -7,12 +7,13 @@ import FieldBox from "../../components/FieldBox/FieldBox";
 import Moon from "../../components/Moon/Moon";
 
 const Section1 = () => {
+  const sectionHeader = content[0].header;
   const sectionContent = content[0].content;
   const sectionId = content[0].id;
   const fieldContent = content[0].formText;
 
   return (
-    <div className="Section1">
+    <div className="Section1" id="section1">
       <Section1Background />
       <Container className="h-100 Section1__container">
         <Row className="align-items-center justify-content-center h-100">
@@ -29,7 +30,7 @@ const Section1 = () => {
               Section1__column"
           >
             <div className="Section1__content">
-              <ContentBox content={sectionContent} />
+              <ContentBox header={sectionHeader} content={sectionContent} />
             </div>
             <div className="Section1__field">
               <FieldBox fieldText={fieldContent} section={sectionId} />

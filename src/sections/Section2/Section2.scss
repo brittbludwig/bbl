@@ -1,0 +1,31 @@
+.Section2 {
+  @include sectionStyles();
+
+  &__background {
+    @include backgroundStyles();
+    background: linear-gradient($dark-purple-pink, $dark-pink);
+  }
+
+  &__column {
+    @include media-breakpoint-up(lg) {
+      min-height: $min-section-height-desktop;
+    }
+  }
+
+  &__content {
+    @include media-breakpoint-up(lg) {
+      max-width: 90%;
+      margin-left: auto;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__field {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 20%;
+    }
+  }
+}
