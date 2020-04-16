@@ -1,20 +1,40 @@
 .Navigation {
   background-color: $white;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 60px;
+  z-index: $navigation-z-index;
+
+  @include media-breakpoint-up(lg) {
+    height: 80px;
+  }
+  @for $i from 1 through 7 {
+    &--section#{$i} {
+      .Navigation__bar {
+        .Navigation__close-icon {
+          @include activeSectionNav(nth($sectionColors, $i));
+        }
+      }
+
+      .Navigation__link--home {
+        &:hover {
+          color: nth($sectionColors, $i);
+        }
+      }
+
+      .Navigation__menu-item {
+        &:hover .Navigation__link {
+          color: nth($sectionColors, $i);
+        }
+      }
+    }
+  }
 
   &__bar {
     justify-content: flex-end;
     padding: 0.75rem 0;
-
-    @for $i from 1 through 6 {
-      &--section#{$i} {
-        @include activeSection(nth($sectionColors, $i));
-      }
-    }
   }
 
   &__links {
@@ -49,7 +69,6 @@
     color: $gray-300;
     display: block;
     font-size: 2rem;
-    line-height: 2;
 
     @include media-breakpoint-up(lg) {
       font-size: 1.25rem;
@@ -63,16 +82,12 @@
 
     &--home {
       font-size: 1.25rem;
-      padding: 0.25rem 0;
+      padding: 0.66rem 0;
 
       @include media-breakpoint-up(lg) {
         font-size: 1.5rem;
-        margin-top: 0.2rem;
+        margin-top: 0.5rem;
         padding: 1rem 0;
-      }
-
-      &:hover {
-        color: $dark-purple;
       }
     }
   }
@@ -88,12 +103,6 @@
 
       @include media-breakpoint-up(lg) {
         display: inline-block;
-      }
-
-      @for $i from 1 through 6 {
-        &:nth-of-type(#{$i}):hover .Navigation__link {
-          color: nth($sectionColors, $i);
-        }
       }
     }
   }

@@ -9,11 +9,12 @@ import {
   Collapse,
 } from "reactstrap";
 import content from "../../static/content/content";
-import labels from "../../static/labels/labels";
+import { navigation } from "../../static/labels/labels";
 import { store } from "../../store/store";
 
 const Navigation = () => {
   const globalState = useContext(store);
+  const activeSection = globalState.state.activeSection;
 
   const [isNavOpen, setNavOpen] = useState(false);
   const toggleNav = () => setNavOpen(!isNavOpen);
@@ -33,7 +34,11 @@ const Navigation = () => {
   });
 
   return (
-    <div className="Navigation">
+    <div
+      className={`Navigation ${
+        activeSection ? "Navigation--" + activeSection : ""
+      }`}
+    >
       <Container>
         <Row>
           <Col xs="10" md="3">
@@ -42,20 +47,11 @@ const Navigation = () => {
               to="/#section1"
               className="Navigation__link Navigation__link--home"
             >
-              {labels.siteTitle}
+              {navigation.siteTitle}
             </Link>
           </Col>
           <Col xs="2" md="9">
-            <Navbar
-              className={`Navigation__bar ${
-                globalState.state.activeSection
-                  ? "Navigation__bar--" + globalState.state.activeSection
-                  : ""
-              }`}
-              light
-              expand="lg"
-              id="navbar"
-            >
+            <Navbar className="Navigation__bar" light expand="lg" id="navbar">
               <NavbarToggler onClick={toggleNav}>
                 <div
                   className={`Navigation__close-icon ${

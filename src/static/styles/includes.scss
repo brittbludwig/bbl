@@ -5,7 +5,14 @@
 @import "./global.scss";
 
 // Components
+@import "../../components/ContentBox/ContentBox.scss";
+@import "../../components/Field/Field.scss";
+@import "../../components/FieldBox/FieldBox.scss";
+@import "../../components/Moon/Moon.scss";
 @import "../../components/Navigation/Navigation.scss";
+
+// Sections
+@import "../../sections/Section1/Section1.scss";
 
 // Pages
 @import "../../pages/Main/Main.scss";

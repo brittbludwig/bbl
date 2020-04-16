@@ -5,6 +5,31 @@ body {
   width: 100vw;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: $font-weight-bold;
+  padding-bottom: 0.25rem;
+}
+
+p {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+  }
+}
+
+input[type="text"] {
+  border: 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 // Bootstrap overrides
 .navbar-light .navbar-toggler {
   border: 0;
