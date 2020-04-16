@@ -34,7 +34,11 @@ const Navigation = () => {
   });
 
   return (
-    <div className="Navigation">
+    <div
+      className={`Navigation ${
+        activeSection ? "Navigation--" + activeSection : ""
+      }`}
+    >
       <Container>
         <Row>
           <Col xs="10" md="3">
