@@ -11,14 +11,15 @@ import star7 from "../../static/images/star7.png";
 
 const Stars = () => {
   const globalState = useContext(store);
-  const [starDensity, setStarDensity] = useState(globalState.state.starDensity);
+  const currentDensity = globalState.state.starDensity;
+  const [starDensity, setStarDensity] = useState(currentDensity);
   const stars = [star1, star2, star3, star4, star5, star6, star7];
 
   useEffect(() => {
-    if (starDensity !== globalState.state.starDensity) {
-      setStarDensity(globalState.state.starDensity);
+    if (starDensity !== currentDensity) {
+      setStarDensity(currentDensity);
     }
-  }, [starDensity, globalState.state.starDensity]);
+  }, [starDensity, currentDensity]);
 
   let starList = [];
   for (let i = 0; i < starDensity; i++) {

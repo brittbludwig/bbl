@@ -13,10 +13,30 @@
   z-index: $background-z-index;
 }
 
-@mixin sectionStyles() {
-  height: 100vh;
-  position: relative;
+@mixin boxStyles() {
+  background-color: rgba($white, 0.5);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 1rem;
 
+  p {
+    font-size: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@mixin sectionStyles() {
+  height: 100%;
+  position: relative;
+  min-height: 700px;
+  padding: 50px 0;
   @include media-breakpoint-up(md) {
     min-height: 700px;
   }

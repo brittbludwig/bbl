@@ -1,2 +1,16 @@
 .Moon {
+  &__img {
+    opacity: 0;
+    transform: scale(0.25);
+    transition: all 0.66s ease-in-out;
+
+    &.active {
+      opacity: 1;
+      transform: scale(0.75);
+
+      @include media-breakpoint-up(lg) {
+        transform: scale(1);
+      }
+    }
+  }
 }

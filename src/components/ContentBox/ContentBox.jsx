@@ -13,8 +13,8 @@ const ContentBox = ({ content }) => {
 
   return (
     <div className="ContentBox">
-      {template.map((item) => {
-        return <Interweave content={item} />;
+      {template.map((item, index) => {
+        return <Interweave key={index} content={item} />;
       })}
     </div>
   );

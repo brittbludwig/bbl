@@ -16,6 +16,16 @@ p {
   padding-bottom: 0.25rem;
 }
 
+input[type="text"] {
+  border: 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 // Bootstrap overrides
 .navbar-light .navbar-toggler {
   border: 0;

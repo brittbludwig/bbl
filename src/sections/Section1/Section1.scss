@@ -1,19 +1,41 @@
 .Section1 {
-  @include sectionStyles();
-  margin-top: 60px;
+  $margin-top-desktop: 80px;
 
-  @include media-breakpoint-up(lg) {
-    margin-top: 80px;
-  }
+  @include sectionStyles();
 
   &__background {
     @include backgroundStyles();
     background: linear-gradient($dark-purple, $dark-purple-pink);
   }
 
+  &__container {
+    @include media-breakpoint-up(lg) {
+      margin-top: -$margin-top-desktop;
+    }
+  }
+
   &__column {
     @include media-breakpoint-up(lg) {
-      min-height: $min-section-height;
+      min-height: $min-section-height-desktop;
+    }
+  }
+
+  &__content {
+    margin-top: 3rem;
+    max-width: 80%;
+
+    @include media-breakpoint-up(lg) {
+      max-width: auto;
+    }
+  }
+
+  &__field {
+    margin-top: 1rem;
+    min-width: 80%;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 15%;
+      margin-left: 20%;
     }
   }
 }
