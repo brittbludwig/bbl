@@ -35,11 +35,12 @@
         font-size: 0.8rem;
 
         @include media-breakpoint-up(lg) {
-          font-size: 1rem;
+          font-size: 1.25rem;
         }
       }
 
       @include media-breakpoint-up(lg) {
+        font-size: 1.25rem;
         width: auto;
       }
     }
