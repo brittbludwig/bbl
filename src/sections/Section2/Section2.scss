@@ -13,19 +13,49 @@
   }
 
   &__content {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+
     @include media-breakpoint-up(lg) {
-      max-width: 90%;
-      margin-left: auto;
+      width: auto;
     }
 
     span {
-      display: inline-block;
+      @include xsDevice(0.7rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+
+      &:nth-of-type(2) {
+        @include xsDevice(0.7rem);
+        font-size: 0.8rem;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 1rem;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: auto;
+      }
     }
   }
 
   &__field {
+    margin-top: 1rem;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+
     @include media-breakpoint-up(lg) {
-      margin-bottom: 20%;
+      margin-top: 85%;
+      width: auto;
     }
   }
 }

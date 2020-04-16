@@ -22,8 +22,11 @@ const Section2 = () => {
             className="d-flex 
               align-items-center 
               justify-content-center
+              justify-content-lg-end
               order-1
               order-lg-2 
+              flex-column
+              flex-lg-row
               Section2__column"
           >
             <div className="Section2__content">
@@ -35,10 +38,13 @@ const Section2 = () => {
             lg={5}
             className="d-flex 
               align-items-center  
-              justify-content-end
+              justify-content-center
+              justify-content-lg-end
               flex-column 
               order-2
               order-lg-1
+              flex-column
+              flex-lg-row
               Section2__column"
           >
             <div className="Section2__field">

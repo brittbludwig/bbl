@@ -29,3 +29,10 @@
     min-height: $min-section-height-desktop;
   }
 }
+
+//
+@mixin xsDevice($fontSize) {
+  @media only screen and (max-device-width: 374px) {
+    font-size: $fontSize;
+  }
+}

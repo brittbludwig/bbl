@@ -12,7 +12,7 @@ const ContentBox = ({ header, content }) => {
       block = item;
     }
     if (typeof item === "object") {
-      block = `<span className='ContentBox__company'>${item.place}</span> - ${item.date}`;
+      block = `<span>${item.place}</span><span>${item.date}</span>`;
     }
     template.push(block);
   });
