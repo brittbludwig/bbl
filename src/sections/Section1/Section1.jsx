@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-
 import Section1Background from "../../sections/Section1/Section1Background";
 import ContentBox from "../../components/ContentBox/ContentBox";
 import FieldBox from "../../components/FieldBox/FieldBox";
