@@ -10,13 +10,12 @@ import star5 from "../../static/images/star5.png";
 import star6 from "../../static/images/star6.png";
 import star7 from "../../static/images/star7.png";
 
-const Stars = () => {
+const Stars = ({ position }) => {
   const globalState = useContext(store);
-  const activeSection = globalState.state.activeSection;
   const currentDensity =
-    activeSection === sections.section2
-      ? globalState.state.starDensity / 2
-      : globalState.state.starDensity;
+    position === "primary"
+      ? globalState.state.starDensity
+      : globalState.state.starDensity / 2;
   const [starList, setStarList] = useState([]);
   const [starTemplate, setStarTemplate] = useState([]);
   const stars = [star1, star2, star3, star4, star5, star6, star7];
