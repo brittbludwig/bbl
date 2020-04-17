@@ -5,7 +5,7 @@ import Rocket from "../../components/Rocket/Rocket";
 const Section2Background = () => {
   return (
     <div className="Section2__background">
-      <Stars />
+      <Stars position="secondary" />
       <Rocket />
     </div>
   );

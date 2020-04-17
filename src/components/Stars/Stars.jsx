@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import { store } from "../../store/store";
-import { sections } from "../../static/labels/labels";
 import randomNumber from "../../utilities/random-number/random-number";
 import star1 from "../../static/images/star1.png";
 import star2 from "../../static/images/star2.png";
@@ -10,13 +9,12 @@ import star5 from "../../static/images/star5.png";
 import star6 from "../../static/images/star6.png";
 import star7 from "../../static/images/star7.png";
 
-const Stars = () => {
+const Stars = ({ position }) => {
   const globalState = useContext(store);
-  const activeSection = globalState.state.activeSection;
   const currentDensity =
-    activeSection === sections.section2
-      ? globalState.state.starDensity / 2
-      : globalState.state.starDensity;
+    position === "primary"
+      ? globalState.state.starDensity
+      : globalState.state.starDensity / 2;
   const [starList, setStarList] = useState([]);
   const [starTemplate, setStarTemplate] = useState([]);
   const stars = [star1, star2, star3, star4, star5, star6, star7];
@@ -34,8 +32,8 @@ const Stars = () => {
 
       let nightSky = [];
       starArray.forEach((item, key) => {
-        const positionTop = randomNumber(0, 95);
-        const positionLeft = randomNumber(0, 95);
+        const positionTop = randomNumber(0, 93);
+        const positionLeft = randomNumber(0, 93);
         const size = randomNumber(0, 2) + "." + randomNumber(0, 6);
         const animationDelay = randomNumber(5, 60);
         const isShootingStar = randomNumber(0, starList.length) === key;
