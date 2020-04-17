@@ -4,21 +4,21 @@ import { store } from "../../store/store";
 const SkillButton = ({ category, name }) => {
   const globalState = useContext(store);
   const { dispatch } = globalState;
-  const [clicked, setSelection] = useState(false);
+  const activeSection = globalState.state.activeSection;
+  const [selected, setSelected] = useState(false);
 
-  const handleClick = (value) => {
-    console.log("hit");
-    // const newFieldSet = {
-    //   ...globalState.state.formFields,
-    //   [activeField]: value,
-    // };
-    // dispatch({ type: 'UPDATE_FIELDS', formFields: newFieldSet });
-    // setSelection(true);
+  const handleClick = () => {
+    const newFieldSet = {
+      ...globalState.state.formFields,
+      [activeSection]: [name, ...globalState.state.formFields[activeSection]],
+    };
+    dispatch({ type: "UPDATE_FIELDS", formFields: newFieldSet });
+    setSelected(true);
   };
 
   return (
     <button
-      className={`SkillButton ${clicked ? "SkillButton--selected" : ""}`}
+      className={`SkillButton ${selected ? "SkillButton--selected" : ""}`}
       onClick={() => handleClick()}
     >
       {name}
