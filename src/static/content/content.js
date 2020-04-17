@@ -4,7 +4,6 @@ const content = [
     id: "section1",
     header: "Hi there.",
     content: [
-      "Hi.",
       "My name is Brittany.",
       "I'm a front end engineer living in Los Angeles with 10 years industry experience.",
     ],
@@ -13,36 +12,34 @@ const content = [
   {
     name: "Resume",
     id: "section2",
-    resume: {
-      header: "Places I've worked",
-      content: [{ text: "What is your job?" }],
-      jobs: [
-        {
-          place: "ConsumerTrack",
-          date: "10/2019 - 03/2020",
-        },
-        {
-          place: "Deloitte Digital",
-          date: "05/2016 - 10/2019",
-        },
-        {
-          place: "Canyon Design Group",
-          date: "10/2014 - 04/2016",
-        },
-        {
-          place: "...and company",
-          date: "03/2012 - 09/2014",
-        },
-        {
-          place: "Tuesday Creative",
-          date: "10/2009 - 03/2012",
-        },
-        {
-          place: "Oskoui+Oskoui",
-          date: "09/2007 - 12/2008",
-        },
-      ],
-    },
+    header: "Places I've worked",
+    formText: "What is your job?",
+    resume: [
+      {
+        place: "ConsumerTrack",
+        date: "10/2019 - 03/2020",
+      },
+      {
+        place: "Deloitte Digital",
+        date: "05/2016 - 10/2019",
+      },
+      {
+        place: "Canyon Design Group",
+        date: "10/2014 - 04/2016",
+      },
+      {
+        place: "...and company",
+        date: "03/2012 - 09/2014",
+      },
+      {
+        place: "Tuesday Creative",
+        date: "10/2009 - 03/2012",
+      },
+      {
+        place: "Oskoui+Oskoui",
+        date: "09/2007 - 12/2008",
+      },
+    ],
   },
   {
     name: "Skills",

@@ -21,8 +21,8 @@
   }
 
   &__content {
+    @include boxSize();
     margin-top: 3rem;
-    max-width: 80%;
 
     @include media-breakpoint-up(lg) {
       max-width: auto;
@@ -30,8 +30,8 @@
   }
 
   &__field {
+    @include boxSize();
     margin-top: 1rem;
-    min-width: 80%;
 
     @include media-breakpoint-up(lg) {
       margin-top: 15%;

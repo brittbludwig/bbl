@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { store } from "../../store/store";
-import { stateActions } from "../../static/labels/labels";
 
 const Field = ({ section }) => {
   const globalState = useContext(store);

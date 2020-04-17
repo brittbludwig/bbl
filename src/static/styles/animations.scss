@@ -33,53 +33,26 @@
 // In From Left
 @keyframes moveFromLeft {
   0% {
-    bottom: -60%;
-    left: -100%;
-    transform: rotate(10deg) scale(1);
+    bottom: 30%;
+    left: -50%;
+    transform: rotate(20deg) scale(1);
+  }
+  10% {
+    bottom: 35%;
+    transform: rotate(20deg) scale(1.5);
   }
   40% {
-    bottom: 0%;
-    left: 0%;
-    transform: rotate(10deg) scale(1.5);
-  }
-  60% {
-    bottom: 60%;
-    left: 100%;
-    transform: rotate(10deg) scale(0.5);
+    left: 30%;
+    transform: rotate(20deg) scale(1);
   }
   80% {
-    bottom: 60%;
-    left: 100%;
-    transform: rotate(10deg) scale(0.5);
+    bottom: 80%;
+    transform: rotate(30deg) scale(0.5);
   }
   100% {
-    bottom: 120%;
-    left: 200%;
-    transform: rotate(10deg) scale(0.1);
-  }
-}
-
-// In From Right
-@keyframes moveFromRight {
-  0% {
-    bottom: -60%;
-    left: 200%;
-    transform: rotate(-100deg) scale(1);
-  }
-  40% {
-    bottom: 0%;
-    left: 100%;
-    transform: rotate(-100deg) scale(1.5);
-  }
-  60% {
-    bottom: 60%;
-    left: 0%;
-    transform: rotate(-100deg) scale(0.5);
-  }
-  100% {
-    bottom: 120%;
-    left: -200%;
-    transform: rotate(-100deg) scale(0.1);
+    bottom: 90%;
+    left: 300%;
+    transform: rotate(30deg) scale(0.1);
   }
 }
 

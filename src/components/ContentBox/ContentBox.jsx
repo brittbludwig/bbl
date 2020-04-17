@@ -1,10 +1,22 @@
 import React from "react";
 import Interweave from "interweave";
 
-const ContentBox = ({ content }) => {
+const ContentBox = ({ header, content }) => {
+  const headerTemplate = `<h2>${header}</h2>`;
+
   let template = [];
-  content.forEach((item, index) => {
-    const block = index === 0 ? `<h2>${item}</h2>` : `<p>${item}</p>`;
+  template.push(headerTemplate);
+
+  content.forEach((item) => {
+    let block = "";
+    if (typeof item === "string") {
+      block = item;
+    }
+    if (typeof item === "object") {
+      Object.values(item).forEach((entry) => {
+        block = `${block}<span>${entry}</span>`;
+      });
+    }
     template.push(block);
   });
 

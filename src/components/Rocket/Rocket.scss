@@ -1,0 +1,18 @@
+.Rocket {
+  bottom: 10%;
+  left: -100%;
+  position: absolute;
+  width: 150px;
+
+  @include media-breakpoint-up(md) {
+    width: 250px;
+  }
+
+  &.active {
+    animation: moveFromLeft 7s linear forwards;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
