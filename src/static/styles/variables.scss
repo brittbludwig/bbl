@@ -12,7 +12,7 @@ $gray-ddd: #ddd;
 $dark-blue: #1b61ff;
 $dark-blue-purple: #314aff;
 $dark-green: #1af7ff;
-$dark-orange: #ff861a;
+$dark-orange: #ff7044;
 $dark-purple: #7123ff;
 $dark-purple-pink: #a821ff;
 $dark-pink: #fc2ee1;
@@ -35,6 +35,7 @@ $text-shadow: rgba($black, 0.8);
 
 // z-indexes
 $background-z-index: 0;
+$cloud-z-index: 1;
 $navigation-z-index: 3;
 
 // Layout

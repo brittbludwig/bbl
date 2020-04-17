@@ -1,0 +1,13 @@
+.Section3 {
+  @include sectionStyles();
+
+  &__background {
+    @include backgroundStyles();
+    background: linear-gradient($dark-pink, $dark-orange);
+  }
+
+  &__content {
+    margin-top: 12.5%;
+    width: 70%;
+  }
+}

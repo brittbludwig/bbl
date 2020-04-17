@@ -1,0 +1,15 @@
+.Plane {
+  position: absolute;
+  top: 7.5%;
+  left: -60%;
+  transition: all 20s linear;
+  width: 500px;
+
+  &.active {
+    left: 120%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

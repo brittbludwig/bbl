@@ -1,0 +1,29 @@
+.Clouds {
+  position: absolute;
+  max-width: 450px;
+  transition: all 1s linear;
+  z-index: $cloud-z-index;
+
+  &--left {
+    max-width: 650px;
+    bottom: 0px;
+    left: -650px;
+
+    &.active {
+      left: -225px;
+    }
+  }
+
+  &--right {
+    top: 0;
+    right: -450px;
+
+    &.active {
+      right: -175px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
