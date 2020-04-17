@@ -16,7 +16,7 @@
     @include boxSize();
     margin-top: 5%;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 1.25rem;
       margin-top: 0;
     }
