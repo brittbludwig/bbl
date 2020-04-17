@@ -14,6 +14,12 @@
 
   &__content {
     @include boxSize();
+    margin-top: 5%;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
 
     span {
       @include xsDevice(0.7rem);

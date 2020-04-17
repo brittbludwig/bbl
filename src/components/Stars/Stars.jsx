@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import { store } from "../../store/store";
-import { sections } from "../../static/labels/labels";
 import randomNumber from "../../utilities/random-number/random-number";
 import star1 from "../../static/images/star1.png";
 import star2 from "../../static/images/star2.png";
@@ -33,8 +32,8 @@ const Stars = ({ position }) => {
 
       let nightSky = [];
       starArray.forEach((item, key) => {
-        const positionTop = randomNumber(0, 95);
-        const positionLeft = randomNumber(0, 95);
+        const positionTop = randomNumber(0, 93);
+        const positionLeft = randomNumber(0, 93);
         const size = randomNumber(0, 2) + "." + randomNumber(0, 6);
         const animationDelay = randomNumber(5, 60);
         const isShootingStar = randomNumber(0, starList.length) === key;

@@ -19,7 +19,7 @@ const Main = () => {
         if (currentSection) {
           let sectionCoords = currentSection.getBoundingClientRect();
 
-          if (sectionCoords.top >= -100 && sectionCoords.top <= 100) {
+          if (sectionCoords.top >= -200 && sectionCoords.top <= 200) {
             visibleSection = item.id;
           }
         }
