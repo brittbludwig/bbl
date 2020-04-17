@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import SkillButton from "../../components/SkillButton/SkillButton";
 
 const SkillBox = ({ header, skills }) => {
@@ -15,13 +16,7 @@ const SkillBox = ({ header, skills }) => {
     }
 
     skills.forEach((item, i) => {
-      template.push(
-        <SkillButton
-          key={i}
-          category={item.type}
-          name={item.name}
-        ></SkillButton>
-      );
+      template.push(<SkillButton key={i} name={item.name}></SkillButton>);
     });
 
     setSkillButtons(template);
@@ -33,6 +28,16 @@ const SkillBox = ({ header, skills }) => {
       {skillButtons}
     </div>
   );
+};
+
+SkillBox.defaultProps = {
+  header: "",
+  skills: [],
+};
+
+SkillBox.propTypes = {
+  header: PropTypes.string,
+  skills: PropTypes.arrayOf({}),
 };
 
 export default SkillBox;

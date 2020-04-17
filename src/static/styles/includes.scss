@@ -5,10 +5,13 @@
 @import "./global.scss";
 
 // Components
+@import "../../components/Button/Button.scss";
 @import "../../components/Clouds/Clouds.scss";
 @import "../../components/ContentBox/ContentBox.scss";
 @import "../../components/Field/Field.scss";
 @import "../../components/FieldBox/FieldBox.scss";
+@import "../../components/Filter/Filter.scss";
+@import "../../components/FilterButton/FilterButton.scss";
 @import "../../components/Moon/Moon.scss";
 @import "../../components/Navigation/Navigation.scss";
 @import "../../components/Plane/Plane.scss";

@@ -10,3 +10,11 @@ export const sections = {
   section5: "section5",
   section6: "section6",
 };
+
+export const skillCategories = {
+  libraries: "Libraries/Frameworks",
+  apis: "APIs",
+  crms: "CRM/CMS",
+  certifications: "Certifications",
+  languages: "Languages",
+};

@@ -54,6 +54,7 @@ const Main = () => {
         sectionHeader={content[2].header}
         sectionContent={content[2].skills}
         sectionId={content[2].id}
+        filterHeader={content[2].formText}
       />
     </div>
   );

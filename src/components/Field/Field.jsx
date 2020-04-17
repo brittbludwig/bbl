@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import PropTypes from "prop-types";
 import { store } from "../../store/store";
 
 const Field = ({ section }) => {
@@ -21,6 +22,14 @@ const Field = ({ section }) => {
       <input type="text" onChange={(e) => handleChange(e.target.value)}></input>
     </div>
   );
+};
+
+Field.defaultProps = {
+  section: "",
+};
+
+Field.propTypes = {
+  section: PropTypes.string,
 };
 
 export default Field;

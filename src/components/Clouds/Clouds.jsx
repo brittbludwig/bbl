@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { store } from "../../store/store";
 import { sections } from "../../static/labels/labels";
 import cloudLeft from "../../static/images/cloud-left.png";
@@ -22,6 +23,14 @@ const Clouds = ({ anchor }) => {
       <img src={cloudImg} className="Clouds__img" alt="cloud" />
     </div>
   );
+};
+
+Clouds.defaultProps = {
+  anchor: "",
+};
+
+Clouds.propTypes = {
+  anchor: PropTypes.string,
 };
 
 export default Clouds;

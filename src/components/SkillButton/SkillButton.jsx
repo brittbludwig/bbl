@@ -1,11 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
+import PropTypes from "prop-types";
 import { store } from "../../store/store";
+import Button from "../../components/Button/Button";
 
-const SkillButton = ({ category, name }) => {
+const SkillButton = ({ name }) => {
   const globalState = useContext(store);
   const { dispatch } = globalState;
   const activeSection = globalState.state.activeSection;
-  const [selected, setSelected] = useState(false);
 
   const handleClick = () => {
     const newFieldSet = {
@@ -13,17 +14,17 @@ const SkillButton = ({ category, name }) => {
       [activeSection]: [name, ...globalState.state.formFields[activeSection]],
     };
     dispatch({ type: "UPDATE_FIELDS", formFields: newFieldSet });
-    setSelected(true);
   };
 
-  return (
-    <button
-      className={`SkillButton ${selected ? "SkillButton--selected" : ""}`}
-      onClick={() => handleClick()}
-    >
-      {name}
-    </button>
-  );
+  return <Button theme="transparent" label={name} handleClick={handleClick} />;
+};
+
+SkillButton.defaultProps = {
+  name: "",
+};
+
+SkillButton.propTypes = {
+  name: PropTypes.string,
 };
 
 export default SkillButton;

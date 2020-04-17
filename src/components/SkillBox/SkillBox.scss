@@ -1,5 +1,7 @@
 .SkillBox {
   @include boxStyles();
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 
   span > span:first-of-type {
     color: $gray-300;

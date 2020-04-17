@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Interweave from "interweave";
 import Field from "../Field/Field";
 
@@ -13,6 +14,16 @@ const FieldBox = ({ fieldText, section }) => {
       </div>
     </div>
   );
+};
+
+FieldBox.defaultProps = {
+  fieldText: "",
+  section: "",
+};
+
+FieldBox.propTypes = {
+  fieldText: PropTypes.string,
+  section: PropTypes.string,
 };
 
 export default FieldBox;

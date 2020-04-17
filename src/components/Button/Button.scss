@@ -1,0 +1,19 @@
+.Button {
+  background-color: transparent;
+  border: 0;
+  margin-right: 0.75rem;
+  padding: 0.1rem 0;
+  width: auto;
+
+  &:focus,
+  &:hover {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &__transparent {
+    &--selected {
+      color: $dark-purple;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
+import PropTypes from "prop-types";
 import { store } from "../../store/store";
 import randomNumber from "../../utilities/random-number/random-number";
 import star1 from "../../static/images/star1.png";
@@ -66,6 +67,14 @@ const Stars = ({ position }) => {
   }, [starList, starTemplate, currentDensity, stars]);
 
   return <div className="Stars">{starTemplate}</div>;
+};
+
+Stars.defaultProps = {
+  position: "",
+};
+
+Stars.propTypes = {
+  position: PropTypes.string,
 };
 
 export default Stars;
