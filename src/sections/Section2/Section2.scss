@@ -13,15 +13,7 @@
   }
 
   &__content {
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      width: 80%;
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: auto;
-    }
+    @include boxSize();
 
     span {
       @include xsDevice(0.7rem);
@@ -47,16 +39,11 @@
   }
 
   &__field {
+    @include boxSize();
     margin-top: 1rem;
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      width: 80%;
-    }
 
     @include media-breakpoint-up(lg) {
       margin-top: 85%;
-      width: auto;
     }
   }
 }

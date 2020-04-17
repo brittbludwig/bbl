@@ -21,16 +21,8 @@
   }
 
   &__content {
+    @include boxSize();
     margin-top: 3rem;
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      width: 80%;
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: auto;
-    }
 
     @include media-breakpoint-up(lg) {
       max-width: auto;
@@ -38,17 +30,12 @@
   }
 
   &__field {
+    @include boxSize();
     margin-top: 1rem;
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      width: 80%;
-    }
 
     @include media-breakpoint-up(lg) {
       margin-top: 15%;
       margin-left: 20%;
-      width: auto;
     }
   }
 }

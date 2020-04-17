@@ -30,9 +30,20 @@
   }
 }
 
-//
 @mixin xsDevice($fontSize) {
   @media only screen and (max-device-width: 374px) {
     font-size: $fontSize;
+  }
+}
+
+@mixin boxSize() {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
   }
 }

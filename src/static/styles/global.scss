@@ -21,7 +21,8 @@ span {
   font-size: 1rem;
   padding-bottom: 0.25rem;
 
-  @include xsDevice(0.7) @include media-breakpoint-up(md) {
+  @include xsDevice(0.7);
+  @include media-breakpoint-up(md) {
     font-size: 1.25rem;
   }
 }

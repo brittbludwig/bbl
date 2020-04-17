@@ -1,19 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import content from "../../static/content/content";
 import Section1Background from "../../sections/Section1/Section1Background";
 import ContentBox from "../../components/ContentBox/ContentBox";
 import FieldBox from "../../components/FieldBox/FieldBox";
 import Moon from "../../components/Moon/Moon";
 
-const Section1 = () => {
-  const sectionHeader = content[0].header;
-  const sectionContent = content[0].content;
-  const sectionId = content[0].id;
-  const fieldContent = content[0].formText;
-
+const Section1 = ({
+  sectionHeader,
+  sectionContent,
+  sectionId,
+  fieldContent,
+}) => {
   return (
-    <div className="Section1" id="section1">
+    <div className="Section1" id={sectionId}>
       <Section1Background />
       <Container className="h-100 Section1__container">
         <Row className="align-items-center justify-content-center h-100">

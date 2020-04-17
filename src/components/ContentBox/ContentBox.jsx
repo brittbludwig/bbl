@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Interweave from "interweave";
 
 const ContentBox = ({ header, content }) => {
@@ -6,13 +6,16 @@ const ContentBox = ({ header, content }) => {
 
   let template = [];
   template.push(headerTemplate);
+
   content.forEach((item) => {
-    let block;
+    let block = "";
     if (typeof item === "string") {
       block = item;
     }
     if (typeof item === "object") {
-      block = `<span>${item.place}</span><span>${item.date}</span>`;
+      Object.values(item).forEach((entry) => {
+        block = `${block}<span>${entry}</span>`;
+      });
     }
     template.push(block);
   });
