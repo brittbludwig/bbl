@@ -8,6 +8,7 @@ const FilterButton = ({ skill }) => {
   const globalState = useContext(store);
   const { dispatch } = globalState;
   const skillsToFilter = globalState.state.skillsToFilter;
+  const isSelected = !skillsToFilter.includes(skill);
 
   const handleClick = () => {
     let skillList = skillsToFilter;
@@ -27,6 +28,7 @@ const FilterButton = ({ skill }) => {
       theme="transparent"
       label={skillCategories[skill]}
       handleClick={handleClick}
+      isSelected={isSelected}
     />
   );
 };

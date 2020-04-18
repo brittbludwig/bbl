@@ -7,6 +7,8 @@ const SkillButton = ({ name }) => {
   const globalState = useContext(store);
   const { dispatch } = globalState;
   const activeSection = globalState.state.activeSection;
+  const selectedSkills = globalState.state.formFields[activeSection];
+  const isSelected = selectedSkills.includes(name);
 
   const handleClick = () => {
     const newFieldSet = {
@@ -16,7 +18,14 @@ const SkillButton = ({ name }) => {
     dispatch({ type: "UPDATE_FIELDS", formFields: newFieldSet });
   };
 
-  return <Button theme="transparent" label={name} handleClick={handleClick} />;
+  return (
+    <Button
+      theme="transparent"
+      label={name}
+      handleClick={handleClick}
+      isSelected={isSelected}
+    />
+  );
 };
 
 SkillButton.defaultProps = {

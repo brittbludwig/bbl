@@ -22,10 +22,6 @@ const SkillBox = ({ header, skills }) => {
 
   useEffect(() => {
     let template = [];
-    for (let i = filteredList.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [filteredList[i], filteredList[j]] = [filteredList[j], filteredList[i]];
-    }
     filteredList.forEach((item, i) => {
       template.push(<SkillButton key={i} name={item.name}></SkillButton>);
     });
