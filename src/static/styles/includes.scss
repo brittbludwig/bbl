@@ -5,6 +5,7 @@
 @import "./global.scss";
 
 // Components
+@import "../../components/Balloon/Balloon.scss";
 @import "../../components/Button/Button.scss";
 @import "../../components/Clouds/Clouds.scss";
 @import "../../components/ContentBox/ContentBox.scss";
@@ -23,6 +24,7 @@
 @import "../../sections/Section1/Section1.scss";
 @import "../../sections/Section2/Section2.scss";
 @import "../../sections/Section3/Section3.scss";
+@import "../../sections/Section4/Section4.scss";
 
 // Pages
 @import "../../pages/Main/Main.scss";

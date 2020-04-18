@@ -5,6 +5,12 @@
   transition: all 15s linear;
   width: 500px;
 
+  @media only screen and (orientation: portrait) {
+    @include media-breakpoint-up(md) {
+      top: 8%;
+    }
+  }
+
   &.active {
     animation: planeLeft 15s linear forwards;
   }

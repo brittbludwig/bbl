@@ -1,0 +1,19 @@
+.Balloon {
+  bottom: 0%;
+  right: -150px;
+  position: absolute;
+  width: 150px;
+
+  @include media-breakpoint-up(md) {
+    right: -250px;
+    width: 250px;
+  }
+
+  &.active {
+    animation: balloonRight 15s linear forwards;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

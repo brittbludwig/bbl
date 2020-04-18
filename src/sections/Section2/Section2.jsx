@@ -13,7 +13,7 @@ const Section2 = ({
 }) => {
   return (
     <div className="Section2" id={sectionId}>
-      <Section2Background />
+      <Section2Background id={sectionId} />
       <Container className="h-100 Section2__container">
         <Row className="align-items-center justify-content-center h-100">
           <Col
@@ -40,7 +40,6 @@ const Section2 = ({
               align-items-center  
               justify-content-center
               justify-content-lg-end
-              flex-column 
               order-2
               order-lg-1
               flex-column

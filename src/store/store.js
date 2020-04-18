@@ -1,5 +1,4 @@
 import React, { createContext, useReducer } from "react";
-import content from "../static/content/content";
 
 export const initialState = {
   activeSection: "section1",

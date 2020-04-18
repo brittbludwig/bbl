@@ -8,7 +8,11 @@
 
   &__content {
     margin-top: 33%;
-    width: 80%;
+    width: auto;
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
 
     @include media-breakpoint-up(lg) {
       margin-top: 12%;

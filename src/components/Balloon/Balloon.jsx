@@ -1,9 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import { store } from "../../store/store";
-import rocket from "../../static/images/rocket.png";
+import balloon from "../../static/images/balloon.png";
 
-const Rocket = ({ id }) => {
+const Balloon = ({ id }) => {
   const globalState = useContext(store);
   const activeSection = globalState.state.activeSection;
   const [isActiveSection, setActiveSection] = useState(true);
@@ -13,18 +12,10 @@ const Rocket = ({ id }) => {
   }, [activeSection, id]);
 
   return (
-    <div className={`Rocket ${isActiveSection ? "active" : ""}`}>
-      <img src={rocket} className="Rocket__img" alt="rocket" />
+    <div className={`Balloon ${isActiveSection ? "active" : ""}`}>
+      <img src={balloon} className="Balloon__img" alt="balloon" />
     </div>
   );
 };
 
-Rocket.defaultProps = {
-  id: "",
-};
-
-Rocket.propTypes = {
-  id: PropTypes.string,
-};
-
-export default Rocket;
+export default Balloon;
