@@ -2,7 +2,12 @@
   @include boxStyles();
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  font-size: 0.75rem;
   text-align: right;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
 
   span > span:first-of-type {
     color: $gray-300;
@@ -11,8 +16,10 @@
   }
 
   &__wrap {
+    margin-left: auto;
+    max-width: 90%;
+
     @include media-breakpoint-up(lg) {
-      margin-left: auto;
       max-width: 80%;
     }
   }

@@ -21,6 +21,7 @@
 }
 
 @mixin sectionStyles() {
+  box-sizing: border-box;
   height: 100%;
   min-height: $min-section-height-mobile;
   overflow: hidden;
@@ -28,6 +29,9 @@
   padding: 50px 0;
   @include media-breakpoint-up(md) {
     min-height: $min-section-height-desktop;
+  }
+  @media only screen and (orientation: portrait) {
+    min-height: 100vh !important;
   }
 }
 

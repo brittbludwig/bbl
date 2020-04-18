@@ -7,7 +7,16 @@
   }
 
   &__content {
-    margin-top: 13%;
-    width: 65%;
+    margin-top: 33%;
+    width: 80%;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 12%;
+      width: 65%;
+    }
+
+    @media only screen and (min-device-width: 1024px) and (orientation: portrait) {
+      margin-top: 45%;
+    }
   }
 }

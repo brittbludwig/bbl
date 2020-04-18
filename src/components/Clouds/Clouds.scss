@@ -1,13 +1,21 @@
 .Clouds {
   position: absolute;
-  max-width: 450px;
+  max-width: 370px;
   transition: all 1s linear;
   z-index: $cloud-z-index;
 
+  @include media-breakpoint-up(lg) {
+    max-width: 500px;
+  }
+
   &--left {
-    max-width: 650px;
+    max-width: 370px;
     bottom: 0px;
     left: -650px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 650px;
+    }
 
     &.active {
       left: -225px;
@@ -16,7 +24,7 @@
 
   &--right {
     top: 0;
-    right: -450px;
+    right: -500px;
 
     &.active {
       right: -175px;

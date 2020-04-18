@@ -2,7 +2,12 @@
   @include boxStyles();
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  font-size: 0.75rem;
   min-height: 290px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
 
   span > span:first-of-type {
     color: $gray-300;
