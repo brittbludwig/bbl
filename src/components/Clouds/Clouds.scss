@@ -1,0 +1,37 @@
+.Clouds {
+  max-width: 370px;
+  position: absolute;
+  transition: all 1s linear;
+  z-index: $cloud-z-index;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 500px;
+  }
+
+  &--left {
+    max-width: 370px;
+    bottom: 0px;
+    left: -650px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 650px;
+    }
+
+    &.active {
+      left: -225px;
+    }
+  }
+
+  &--right {
+    top: 0;
+    right: -500px;
+
+    &.active {
+      right: -175px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

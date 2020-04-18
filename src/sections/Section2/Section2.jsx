@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container, Row, Col } from "reactstrap";
 import Section2Background from "../../sections/Section2/Section2Background";
 import ContentBox from "../../components/ContentBox/ContentBox";
@@ -54,6 +55,20 @@ const Section2 = ({
       </Container>
     </div>
   );
+};
+
+Section2.defaultProps = {
+  sectionHeader: "",
+  sectionContent: [],
+  sectionId: "",
+  fieldContent: "",
+};
+
+Section2.propTypes = {
+  sectionHeader: PropTypes.string,
+  sectionContent: PropTypes.array,
+  sectionId: PropTypes.string,
+  fieldContent: PropTypes.string,
 };
 
 export default Section2;

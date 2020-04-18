@@ -5,16 +5,24 @@
 @import "./global.scss";
 
 // Components
+@import "../../components/Button/Button.scss";
+@import "../../components/Clouds/Clouds.scss";
 @import "../../components/ContentBox/ContentBox.scss";
 @import "../../components/Field/Field.scss";
 @import "../../components/FieldBox/FieldBox.scss";
+@import "../../components/Filter/Filter.scss";
+@import "../../components/FilterButton/FilterButton.scss";
 @import "../../components/Moon/Moon.scss";
 @import "../../components/Navigation/Navigation.scss";
+@import "../../components/Plane/Plane.scss";
 @import "../../components/Rocket/Rocket.scss";
+@import "../../components/SkillBox/SkillBox.scss";
+@import "../../components/SkillButton/SkillButton.scss";
 
 // Sections
 @import "../../sections/Section1/Section1.scss";
 @import "../../sections/Section2/Section2.scss";
+@import "../../sections/Section3/Section3.scss";
 
 // Pages
 @import "../../pages/Main/Main.scss";

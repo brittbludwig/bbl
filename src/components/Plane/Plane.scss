@@ -1,0 +1,15 @@
+.Plane {
+  position: absolute;
+  top: 3%;
+  left: -500px;
+  transition: all 15s linear;
+  width: 500px;
+
+  &.active {
+    animation: planeLeft 15s linear forwards;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

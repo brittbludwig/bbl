@@ -29,6 +29,9 @@
   @include media-breakpoint-up(md) {
     min-height: $min-section-height-desktop;
   }
+  @media only screen and (orientation: portrait) {
+    min-height: 100vh !important;
+  }
 }
 
 @mixin xsDevice($fontSize) {

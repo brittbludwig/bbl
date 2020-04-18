@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Interweave from "interweave";
 
 const ContentBox = ({ header, content }) => {
@@ -27,6 +28,16 @@ const ContentBox = ({ header, content }) => {
       })}
     </div>
   );
+};
+
+ContentBox.defaultProps = {
+  header: "",
+  content: [],
+};
+
+ContentBox.propTypes = {
+  header: PropTypes.string,
+  content: PropTypes.array,
 };
 
 export default ContentBox;

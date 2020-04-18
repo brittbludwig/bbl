@@ -45,10 +45,7 @@ const content = [
     name: "Skills",
     id: "section3",
     header: "Skills",
-    content: [
-      { text: "Click the ones you need help with" },
-      { text: "Filter tags" },
-    ],
+    formText: "Filter",
     skills: [
       {
         name: "HTML",
