@@ -21,6 +21,10 @@
       margin-top: 0;
     }
 
+    @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+      margin-top: 33%;
+    }
+
     span {
       @include xsDevice(0.7rem);
       display: flex;

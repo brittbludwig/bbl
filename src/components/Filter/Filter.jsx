@@ -4,13 +4,11 @@ import FilterButton from "../../components/FilterButton/FilterButton";
 
 const Filter = ({ header, skills }) => {
   const [filterOptions, setFilterOptions] = useState([]);
-  const isRendered = filterOptions.length < 0;
 
   useEffect(() => {
-    if (isRendered < 0) return;
     let template = [];
-
     let filterCategories = [];
+
     skills.forEach((item, i) => {
       if (filterCategories.indexOf(item.type) === -1) {
         filterCategories.push(item.type);
@@ -19,7 +17,7 @@ const Filter = ({ header, skills }) => {
     });
 
     setFilterOptions(template);
-  }, [skills, isRendered]);
+  }, [skills]);
 
   return (
     <div className="Filter">

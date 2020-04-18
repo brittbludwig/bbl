@@ -34,4 +34,24 @@
   &__img {
     width: 100%;
   }
+
+  @media only screen and (orientation: portrait) {
+    @include media-breakpoint-up(md) {
+      &--left {
+        left: -650px;
+
+        &.active {
+          left: -150px;
+        }
+      }
+
+      &--right {
+        right: -500px;
+
+        &.active {
+          right: -150px;
+        }
+      }
+    }
+  }
 }

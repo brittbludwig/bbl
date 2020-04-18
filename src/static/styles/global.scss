@@ -19,7 +19,7 @@ p,
 span {
   display: block;
   font-size: 1rem;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.15rem;
 
   @include xsDevice(0.7);
   @include media-breakpoint-up(md) {

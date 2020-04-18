@@ -40,7 +40,7 @@
   }
 }
 
-// In From Left
+// Rocket Left
 @keyframes rocketLeft {
   0% {
     bottom: 30%;
@@ -63,6 +63,32 @@
     bottom: 90%;
     left: 300%;
     transform: rotate(30deg) scale(0.1);
+  }
+}
+
+// Balloon Right
+@keyframes balloonRight {
+  0% {
+    bottom: -50%;
+    right: -50%;
+    transform: rotate(10deg) scale(0.5);
+  }
+  10% {
+    bottom: 20%;
+    transform: rotate(-10deg) scale(1);
+  }
+  40% {
+    right: 50%;
+    transform: rotate(10deg) scale(1.5);
+  }
+  80% {
+    bottom: 50%;
+    transform: rotate(-10deg) scale(1);
+  }
+  100% {
+    bottom: 70%;
+    right: 200%;
+    transform: rotate(10deg) scale(0);
   }
 }
 

@@ -13,7 +13,7 @@ const Section3 = ({
 }) => {
   return (
     <div className="Section3" id={sectionId}>
-      <Section3Background />
+      <Section3Background id={sectionId} />
       <Container className="h-100 Section3__container">
         <Row className="align-items-center justify-content-center h-100">
           <Col

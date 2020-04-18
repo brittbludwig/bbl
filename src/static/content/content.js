@@ -236,6 +236,8 @@ const content = [
   {
     name: "Clients",
     id: "section4",
+    header: "Clients",
+    formText: "Pick an adverb",
     clients: [
       "Walmart",
       "Humana",
@@ -258,7 +260,6 @@ const content = [
       "Paradox Entertainment",
       "Burke Williams",
     ],
-    content: [{ text: "Pick an adverb" }],
   },
   {
     name: "About",
