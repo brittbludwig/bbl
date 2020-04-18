@@ -32,12 +32,12 @@ const ContentBox = ({ header, content }) => {
 
 ContentBox.defaultProps = {
   header: "",
-  content: "",
+  content: [],
 };
 
 ContentBox.propTypes = {
   header: PropTypes.string,
-  content: PropTypes.string,
+  content: PropTypes.array,
 };
 
 export default ContentBox;

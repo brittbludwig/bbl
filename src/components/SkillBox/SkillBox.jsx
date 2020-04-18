@@ -37,7 +37,7 @@ SkillBox.defaultProps = {
 
 SkillBox.propTypes = {
   header: PropTypes.string,
-  skills: PropTypes.arrayOf({}),
+  skills: PropTypes.array,
 };
 
 export default SkillBox;

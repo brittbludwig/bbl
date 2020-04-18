@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from "react";
+import content from "../static/content/content";
 
 export const initialState = {
   activeSection: "section1",
@@ -12,9 +13,12 @@ export const initialState = {
     section6: "",
     section7: "",
   },
+  skills: content[2].skills,
+  skillsToFilter: [],
 };
 
 const ACTIVE_SECTION = "ACTIVE_SECTION";
+const FILTER_SKILLS = "FILTER_SKILLS";
 const UPDATE_FIELDS = "UPDATE_FIELDS";
 
 const store = createContext(initialState);
@@ -28,12 +32,24 @@ const StateProvider = ({ children }) => {
           activeSection: action.activeSection,
           starDensity: state.starDensity,
           formFields: state.formFields,
+          skills: state.skills,
+          skillsToFilter: state.skillsToFilter,
+        };
+      case FILTER_SKILLS:
+        return {
+          activeSection: state.activeSection,
+          starDensity: state.starDensity,
+          formFields: state.formFields,
+          skills: state.skills,
+          skillsToFilter: action.skillsToFilter,
         };
       case UPDATE_FIELDS:
         return {
           activeSection: state.activeSection,
           starDensity: state.starDensity,
           formFields: action.formFields,
+          skills: state.skills,
+          skillsToFilter: state.skillsToFilter,
         };
       default:
         throw new Error();

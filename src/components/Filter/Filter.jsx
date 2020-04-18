@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { skillCategories } from "../../static/labels/labels";
 import FilterButton from "../../components/FilterButton/FilterButton";
 
 const Filter = ({ header, skills }) => {
@@ -15,12 +14,7 @@ const Filter = ({ header, skills }) => {
     skills.forEach((item, i) => {
       if (filterCategories.indexOf(item.type) === -1) {
         filterCategories.push(item.type);
-        template.push(
-          <FilterButton
-            key={i}
-            category={skillCategories[item.type]}
-          ></FilterButton>
-        );
+        template.push(<FilterButton key={i} skill={item.type}></FilterButton>);
       }
     });
 
@@ -29,8 +23,10 @@ const Filter = ({ header, skills }) => {
 
   return (
     <div className="Filter">
-      <h2>{header}</h2>
-      {filterOptions}
+      <div className="Filter__wrap">
+        <h2>{header}</h2>
+        {filterOptions}
+      </div>
     </div>
   );
 };
@@ -42,7 +38,7 @@ Filter.defaultProps = {
 
 Filter.propTypes = {
   header: PropTypes.string,
-  skills: PropTypes.arrayOf({}),
+  skills: PropTypes.array,
 };
 
 export default Filter;

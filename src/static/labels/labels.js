@@ -17,4 +17,5 @@ export const skillCategories = {
   crms: "CRM/CMS",
   certifications: "Certifications",
   languages: "Languages",
+  programs: "Programs",
 };

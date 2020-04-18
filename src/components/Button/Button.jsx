@@ -5,7 +5,7 @@ const Button = ({ label, theme, handleClick }) => {
   const [selected, setSelected] = useState(false);
 
   const buttonClick = () => {
-    setSelected(true);
+    setSelected(!selected);
     handleClick();
   };
 
