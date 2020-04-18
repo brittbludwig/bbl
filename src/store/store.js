@@ -13,7 +13,6 @@ export const initialState = {
     section6: "",
     section7: "",
   },
-  skills: content[2].skills,
   skillsToFilter: [],
 };
 
@@ -32,7 +31,6 @@ const StateProvider = ({ children }) => {
           activeSection: action.activeSection,
           starDensity: state.starDensity,
           formFields: state.formFields,
-          skills: state.skills,
           skillsToFilter: state.skillsToFilter,
         };
       case FILTER_SKILLS:
@@ -40,7 +38,6 @@ const StateProvider = ({ children }) => {
           activeSection: state.activeSection,
           starDensity: state.starDensity,
           formFields: state.formFields,
-          skills: state.skills,
           skillsToFilter: action.skillsToFilter,
         };
       case UPDATE_FIELDS:
@@ -48,7 +45,6 @@ const StateProvider = ({ children }) => {
           activeSection: state.activeSection,
           starDensity: state.starDensity,
           formFields: action.formFields,
-          skills: state.skills,
           skillsToFilter: state.skillsToFilter,
         };
       default:

@@ -6,7 +6,7 @@
   width: 500px;
 
   &.active {
-    left: 120%;
+    animation: planeLeft 15s linear forwards;
   }
 
   &__img {
