@@ -7,14 +7,13 @@ import cloudRight from "../../static/images/cloud-right.png";
 
 const Clouds = ({ anchor }) => {
   const globalState = useContext(store);
+  const activeSection = globalState.state.activeSection;
   const [isActiveSection, setActiveSection] = useState(false);
   const cloudImg = anchor === "left" ? cloudLeft : cloudRight;
 
   useEffect(() => {
-    globalState.state.activeSection === sections.section3
-      ? setActiveSection(true)
-      : setActiveSection(false);
-  }, [globalState.state.activeSection]);
+    setActiveSection(activeSection === sections.section3);
+  }, [activeSection]);
 
   return (
     <div

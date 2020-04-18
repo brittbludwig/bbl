@@ -5,13 +5,12 @@ import plane from "../../static/images/plane.png";
 
 const Plane = () => {
   const globalState = useContext(store);
+  const activeSection = globalState.state.activeSection;
   const [isActiveSection, setActiveSection] = useState(false);
 
   useEffect(() => {
-    globalState.state.activeSection === sections.section3
-      ? setActiveSection(true)
-      : setActiveSection(false);
-  }, [globalState.state.activeSection]);
+    setActiveSection(activeSection === sections.section3);
+  }, [activeSection]);
 
   return (
     <div className={`Plane ${isActiveSection ? `active` : ``}`}>

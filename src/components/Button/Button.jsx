@@ -2,16 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Button = ({ label, theme, handleClick, isSelected }) => {
-  const buttonClick = () => {
-    handleClick();
-  };
-
   return (
     <button
       className={`Button Button__${theme} ${
         isSelected ? `Button__${theme}--selected` : ""
       }`}
-      onClick={() => buttonClick()}
+      onClick={() => handleClick()}
     >
       {label}
     </button>

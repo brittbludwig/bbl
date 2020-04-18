@@ -15,7 +15,7 @@ const Section3 = ({
     <div className="Section3" id={sectionId}>
       <Section3Background />
       <Container className="h-100 Section3__container">
-        <Row className="align-items-center justify-content-center direction-column h-100">
+        <Row className="align-items-center justify-content-center h-100">
           <Col
             className="d-flex align-items-center justify-content-center"
             xs={12}
