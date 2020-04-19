@@ -46,7 +46,7 @@ const Section1 = ({
               order-lg-2 
               Section1__column"
           >
-            <Moon />
+            <Moon id={sectionId} />
           </Col>
         </Row>
       </Container>

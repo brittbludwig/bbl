@@ -264,16 +264,10 @@ const content = [
   {
     name: "About",
     id: "section5",
+    header: "About Me",
+    formText: "Pick a noun",
     content: [
-      {
-        text:
-          "I've been making websites since the mid-90's, when I discovered AOL Publisher and what \"View Source\" meant. I'm self-taught, and since those days early days of making online 'zines and blogging before the word blog existed, I've worked for some of the biggest names in entertainment, retail, financial services and pharmaceuticals. I'm always looking for new challenges, up for learning a new library or framework, and have years of experience working on projects from simple email templates to large-scale, consumer-facing, enterprise level applications. I'd love to talk to you about whatever project you have, large or small.",
-      },
-      {
-        text:
-          "I currently live in Los Angeles with my real-life Garfield cat, Reggie, and love music, macrame, and all things outer space.",
-      },
-      { text: "Pick a noun" },
+      "I've been making websites for over half of my life. What started as a hobby as a teenager as turned into over a decade-long career in which I've worked on some amazing projects for top clients, and made a lot of life-long friends along the way. I'm self-taught, and I've been able to develop and hone my skills through many challenging work experiences. Outside of work, I live with my real-life Garfield cat, Reggie, I'm a human encyclopedia when it comes to music, and I love a totally radical sunset.",
     ],
   },
   {

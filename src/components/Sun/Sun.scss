@@ -1,0 +1,16 @@
+.Sun {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: all 2s linear 1s;
+  width: 0px;
+
+  &.active {
+    margin-left: -50%;
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
