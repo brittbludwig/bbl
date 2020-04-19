@@ -1,0 +1,29 @@
+.Headshot {
+  position: absolute;
+  top: -35px;
+  right: -5px;
+  transition: all 0.1s linear;
+  width: 0px;
+
+  &.active {
+    margin-left: -50%;
+    top: -70px;
+    right: -10px;
+    width: 100px;
+  }
+
+  @include media-breakpoint-up(md) {
+    top: -45px;
+    right: -45px;
+
+    &.active {
+      top: -90px;
+      right: -90px;
+      width: 150px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

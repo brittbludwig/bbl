@@ -1,0 +1,39 @@
+.Section5 {
+  @include sectionStyles();
+  @include xsPaddingBottom();
+
+  &__background {
+    @include backgroundStyles();
+    background: linear-gradient($dark-gold 0%, $dark-yellow 98%, $white 100%);
+  }
+
+  &__column {
+    @include media-breakpoint-up(lg) {
+      min-height: $min-section-height-desktop;
+    }
+  }
+
+  &__content {
+    @include boxSize();
+    margin-top: 10%;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 10%;
+    }
+
+    @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+      margin-top: 33%;
+    }
+  }
+
+  &__field {
+    @include boxSize();
+    margin-top: 1rem;
+    margin-bottom: auto;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 130%;
+    }
+  }
+}

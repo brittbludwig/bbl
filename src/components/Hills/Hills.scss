@@ -1,0 +1,55 @@
+.Hills {
+  position: absolute;
+  bottom: 0;
+  transition: all 1s linear;
+  width: 75vw;
+  z-index: $cloud-z-index;
+
+  &--left {
+    left: -650px;
+
+    &.active {
+      left: -150px;
+    }
+  }
+
+  &--right {
+    right: -500px;
+
+    &.active {
+      right: -150px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  @media only screen and (orientation: portrait) {
+    &--left {
+      &.active {
+        left: -75px;
+      }
+    }
+
+    &--right {
+      &.active {
+        right: -75px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      &--left {
+        &.active {
+          left: -150px;
+        }
+      }
+
+      &--right {
+        &.active {
+          right: -150px;
+        }
+      }
+    }
+  }
+}

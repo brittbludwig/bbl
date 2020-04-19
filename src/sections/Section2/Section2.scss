@@ -17,7 +17,6 @@
     margin-top: 5%;
 
     @include media-breakpoint-up(lg) {
-      font-size: 1.25rem;
       margin-top: 0;
     }
 
@@ -37,12 +36,12 @@
         font-size: 0.8rem;
 
         @include media-breakpoint-up(lg) {
-          font-size: 1.25rem;
+          font-size: 1rem;
         }
       }
 
       @include media-breakpoint-up(lg) {
-        font-size: 1.25rem;
+        font-size: 1rem;
         width: auto;
       }
     }

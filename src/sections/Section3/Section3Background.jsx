@@ -8,7 +8,7 @@ const Section3Background = ({ id }) => {
     <div className="Section3__background">
       <Clouds anchor="left" id={id} />
       <Clouds anchor="right" id={id} />
-      <Plane />
+      <Plane id={id} />
     </div>
   );
 };

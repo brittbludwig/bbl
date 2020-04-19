@@ -1,0 +1,33 @@
+.Birds {
+  overflow: hidden;
+  position: absolute;
+  top: 20%;
+  right: -380px;
+  width: 380px;
+  height: 269px;
+
+  @media only screen and (orientation: portrait) {
+    @include media-breakpoint-up(md) {
+      top: 10%;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.active {
+    animation: birdsRight 15s linear forwards;
+
+    .Birds__img {
+      animation: birdsFly 0.4s steps(2) infinite;
+      width: 200%;
+    }
+  }
+}

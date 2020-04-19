@@ -92,6 +92,23 @@
   }
 }
 
+// Birds Fly
+@keyframes birdsFly {
+  100% {
+    left: -200%;
+  }
+}
+
+// Birds Right
+@keyframes birdsRight {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 120%;
+  }
+}
+
 // In From Left Flip
 @keyframes moveFromLeftFlip {
   0% {
