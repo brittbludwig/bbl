@@ -2,23 +2,23 @@ import React, { useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { store } from "../../store/store";
 import { images } from "../../static/constants/constants";
-//import balloon from '../../static/images/balloon.png';
 
-const Balloon = ({ id }) => {
-  const image = "balloon";
-  const anchor = "left";
+const Image = ({ id, image, anchor }) => {
   const globalState = useContext(store);
   const activeSection = globalState.state.activeSection;
-  const [isActiveSection, setActiveSection] = useState(true);
+  const [isActiveSection, setActiveSection] = useState(false);
+  const [animationStatus, setAnimationStatus] = useState(false);
   const imgUrl = images[image].location;
   const imgName = images[image].name;
+  const loop = images[image].loop;
 
   useEffect(() => {
     setActiveSection(activeSection === id);
-  }, [activeSection, id]);
+    setAnimationStatus(loop);
+  }, [activeSection, animationStatus, id, loop]);
 
   const imgClasses = `${imgName} ${anchor ? `${imgName}--${anchor}` : ""} ${
-    isActiveSection ? "active" : ""
+    isActiveSection || !animationStatus ? "active" : ""
   }`;
 
   return (
@@ -28,12 +28,16 @@ const Balloon = ({ id }) => {
   );
 };
 
-Balloon.defaultProps = {
+Image.defaultProps = {
   id: "",
+  image: "",
+  anchor: "",
 };
 
-Balloon.propTypes = {
+Image.propTypes = {
   id: PropTypes.string,
+  image: PropTypes.string,
+  anchor: PropTypes.string,
 };
 
-export default Balloon;
+export default Image;
