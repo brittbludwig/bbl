@@ -92,10 +92,34 @@
   }
 }
 
-// Birds Fly
-@keyframes birdsFly {
+// Four Frame Sprite
+@keyframes fourFrameAnimation {
+  100% {
+    left: -400%;
+  }
+}
+
+// Three Frame Sprite
+@keyframes threeFrameAnimation {
+  100% {
+    left: -300%;
+  }
+}
+
+// Two Frame sprite
+@keyframes twoFrameAnimation {
   100% {
     left: -200%;
+  }
+}
+
+// Bass Left
+@keyframes bassLeft {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 120%;
   }
 }
 
@@ -109,30 +133,50 @@
   }
 }
 
+// Trout Right
+@keyframes troutRight {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 120%;
+  }
+}
+
+// Turtle Left
+@keyframes turtleLeft {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
 // In From Left Flip
 @keyframes moveFromLeftFlip {
   0% {
-    left: -20%;
-    transform: scaleX(-1);
+    right: -100%;
+    transform: scaleX(1);
   }
   20% {
-    left: 0%;
-    transform: scaleX(-1);
+    right: 0%;
+    transform: scaleX(1);
   }
   40% {
-    left: 25%;
-    transform: scaleX(-1);
+    right: 25%;
+    transform: scaleX(1);
   }
   59% {
-    transform: scaleX(-1);
+    transform: scaleX(1);
   }
   60% {
-    left: 50%;
-    transform: scaleX(1);
+    right: 50%;
+    transform: scaleX(-1);
   }
 
   100% {
-    left: -120%;
-    transform: scaleX(1);
+    right: -120%;
+    transform: scaleX(-1);
   }
 }

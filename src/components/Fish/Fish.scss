@@ -1,0 +1,27 @@
+.Fish {
+  overflow: hidden;
+  position: absolute;
+  top: 25%;
+  right: -250px;
+  width: 250px;
+  height: 128px;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.active {
+    animation: moveFromLeftFlip 8s linear forwards;
+
+    .Fish__img {
+      animation: twoFrameAnimation 0.2s steps(2) infinite;
+      width: 200%;
+    }
+  }
+}

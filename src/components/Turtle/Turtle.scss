@@ -1,0 +1,28 @@
+.Turtle {
+  overflow: hidden;
+  position: absolute;
+  top: 75%;
+  left: -350px;
+  transform: scaleX(-1);
+  width: 350px;
+  height: 180px;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.active {
+    animation: turtleLeft 20s linear 4s forwards;
+
+    .Turtle__img {
+      animation: threeFrameAnimation 0.6s steps(3) infinite;
+      width: 300%;
+    }
+  }
+}

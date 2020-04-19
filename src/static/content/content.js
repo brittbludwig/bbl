@@ -273,7 +273,18 @@ const content = [
   {
     name: "Links",
     id: "section6",
-    content: [{ text: "Pick an adjective" }],
+    header: "Links",
+    formText: "Pick an adjective",
+    links: [
+      {
+        url: "https://github.com/brittbludwig/",
+        title: "GitHub",
+      },
+      {
+        url: "https://www.linkedin.com/in/brittany-ludwig/",
+        title: "LinkedIn",
+      },
+    ],
   },
   {
     name: "Contact",

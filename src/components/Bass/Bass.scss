@@ -1,0 +1,27 @@
+.Bass {
+  overflow: hidden;
+  position: absolute;
+  top: 20%;
+  left: -250px;
+  width: 250px;
+  height: 269px;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.active {
+    animation: bassLeft 6s linear 4s forwards;
+
+    .Bass__img {
+      animation: fourFrameAnimation 0.8s steps(4) infinite;
+      width: 400%;
+    }
+  }
+}
