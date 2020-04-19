@@ -1,0 +1,10 @@
+.Links {
+  @include boxStyles();
+  width: 100%;
+
+  span > span:first-of-type {
+    color: $gray-300;
+    font-weight: $font-weight-bold;
+    margin-right: 1rem;
+  }
+}

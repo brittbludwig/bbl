@@ -1,0 +1,37 @@
+.Section6 {
+  @include sectionStyles();
+  @include xsPaddingBottom();
+
+  &__background {
+    @include backgroundStyles();
+    background: linear-gradient($white 0%, $light-blue 5%, $dark-blue 100%);
+  }
+
+  &__column {
+    @include media-breakpoint-up(lg) {
+      min-height: $min-section-height-desktop;
+    }
+  }
+
+  &__content {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+
+    @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+      margin-top: 33%;
+    }
+  }
+
+  &__field {
+    @include boxSize();
+    margin-top: 1rem;
+  }
+
+  a,
+  a:hover {
+    color: $dark-purple;
+  }
+}

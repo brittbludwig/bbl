@@ -1,0 +1,27 @@
+.Trout {
+  overflow: hidden;
+  position: absolute;
+  top: 75%;
+  right: -250px;
+  width: 250px;
+  height: 128px;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.active {
+    animation: troutRight 8s linear forwards;
+
+    .Trout__img {
+      animation: fourFrameAnimation 0.8s steps(4) infinite;
+      width: 400%;
+    }
+  }
+}

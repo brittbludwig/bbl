@@ -7,6 +7,7 @@ import Section2 from "../../sections/Section2/Section2";
 import Section3 from "../../sections/Section3/Section3";
 import Section4 from "../../sections/Section4/Section4";
 import Section5 from "../../sections/Section5/Section5";
+import Section6 from "../../sections/Section6/Section6";
 
 const Main = () => {
   const globalState = useContext(store);
@@ -69,6 +70,12 @@ const Main = () => {
         sectionContent={content[4].content}
         sectionId={content[4].id}
         fieldContent={content[4].formText}
+      />
+      <Section6
+        sectionHeader={content[5].header}
+        sectionContent={content[5].links}
+        sectionId={content[5].id}
+        fieldContent={content[5].formText}
       />
     </div>
   );
