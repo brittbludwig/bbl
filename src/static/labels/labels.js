@@ -19,3 +19,17 @@ export const skillCategories = {
   languages: "Languages",
   programs: "Programs",
 };
+
+export const contactForm = {
+  send: "Send Email",
+  write: "Write your own",
+  cancel: "Cancel",
+  name: "Name",
+  email: "Email Address",
+  message: "Message",
+};
+
+export const footer = {
+  copyright:
+    "© 2020 Brittany Ludwig. Inspired by David Bowie, Prince, and Bob Ross",
+};

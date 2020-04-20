@@ -13,11 +13,17 @@ export const initialState = {
     section7: "",
   },
   skillsToFilter: [],
+  emailTemplate: {
+    name: "",
+    email: "",
+    message: "",
+  },
 };
 
 const ACTIVE_SECTION = "ACTIVE_SECTION";
 const FILTER_SKILLS = "FILTER_SKILLS";
 const UPDATE_FIELDS = "UPDATE_FIELDS";
+const UPDATE_EMAIL = "UPDATE_EMAIL";
 
 const store = createContext(initialState);
 const { Provider } = store;
@@ -31,6 +37,7 @@ const StateProvider = ({ children }) => {
           starDensity: state.starDensity,
           formFields: state.formFields,
           skillsToFilter: state.skillsToFilter,
+          emailTemplate: state.emailTemplate,
         };
       case FILTER_SKILLS:
         return {
@@ -38,6 +45,7 @@ const StateProvider = ({ children }) => {
           starDensity: state.starDensity,
           formFields: state.formFields,
           skillsToFilter: action.skillsToFilter,
+          emailTemplate: state.emailTemplate,
         };
       case UPDATE_FIELDS:
         return {
@@ -45,6 +53,15 @@ const StateProvider = ({ children }) => {
           starDensity: state.starDensity,
           formFields: action.formFields,
           skillsToFilter: state.skillsToFilter,
+          emailTemplate: state.emailTemplate,
+        };
+      case UPDATE_EMAIL:
+        return {
+          activeSection: state.activeSection,
+          starDensity: state.starDensity,
+          formFields: state.formFields,
+          skillsToFilter: state.skillsToFilter,
+          emailTemplate: action.emailTemplate,
         };
       default:
         throw new Error();

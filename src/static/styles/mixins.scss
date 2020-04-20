@@ -20,6 +20,14 @@
   padding: 1rem;
 }
 
+@mixin boxSize() {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+}
+
 @mixin sectionStyles() {
   height: 100%;
   min-height: $min-section-height-mobile;
@@ -40,20 +48,14 @@
   }
 }
 
-@mixin boxSize() {
-  width: 100%;
-
-  @include media-breakpoint-up(md) {
-    width: 80%;
-  }
-
-  @include media-breakpoint-up(lg) {
-    width: auto;
-  }
-}
-
 @mixin xsPaddingBottom() {
   @media only screen and (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
     padding-bottom: 200px;
+  }
+}
+
+@mixin portraitMargin() {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    margin-top: 33%;
   }
 }

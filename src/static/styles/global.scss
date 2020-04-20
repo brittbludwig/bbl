@@ -24,7 +24,8 @@ span {
   @include xsDevice(0.7);
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
   border: 0;
 
   &:hover,

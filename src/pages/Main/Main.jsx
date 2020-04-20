@@ -8,6 +8,7 @@ import Section3 from "../../sections/Section3/Section3";
 import Section4 from "../../sections/Section4/Section4";
 import Section5 from "../../sections/Section5/Section5";
 import Section6 from "../../sections/Section6/Section6";
+import Section7 from "../../sections/Section7/Section7";
 
 const Main = () => {
   const globalState = useContext(store);
@@ -49,19 +50,19 @@ const Main = () => {
       />
       <Section2
         sectionHeader={content[1].header}
-        sectionContent={content[1].resume}
+        sectionContent={content[1].content}
         sectionId={content[1].id}
         fieldContent={content[1].formText}
       />
       <Section3
         sectionHeader={content[2].header}
-        sectionContent={content[2].skills}
+        sectionContent={content[2].content}
         sectionId={content[2].id}
         filterHeader={content[2].formText}
       />
       <Section4
         sectionHeader={content[3].header}
-        sectionContent={content[3].clients}
+        sectionContent={content[3].content}
         sectionId={content[3].id}
         fieldContent={content[3].formText}
       />
@@ -73,9 +74,15 @@ const Main = () => {
       />
       <Section6
         sectionHeader={content[5].header}
-        sectionContent={content[5].links}
+        sectionContent={content[5].content}
         sectionId={content[5].id}
         fieldContent={content[5].formText}
+      />
+      <Section7
+        sectionHeader={content[6].header}
+        sectionContent={content[6].content}
+        sectionId={content[6].id}
+        fieldContent={content[6].formText}
       />
     </div>
   );

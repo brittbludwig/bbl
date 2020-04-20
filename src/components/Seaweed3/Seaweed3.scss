@@ -1,0 +1,15 @@
+.Seaweed3 {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 150px;
+
+  @include media-breakpoint-up(md) {
+    left: 5%;
+    width: 200px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

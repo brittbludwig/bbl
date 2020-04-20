@@ -1,0 +1,14 @@
+.Submarine {
+  position: absolute;
+  top: 25%;
+  right: -350px;
+  width: 350px;
+
+  &__img {
+    width: 100%;
+  }
+
+  &.active {
+    animation: inFromRight 8s linear forwards;
+  }
+}
