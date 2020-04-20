@@ -24,7 +24,7 @@ const ContactPrepop = ({ content }) => {
   let skills = fields[sections.section3].join(", ");
 
   const checkValue = (field) => {
-    return field.length > 0 ? field : "________";
+    return field.length > 0 ? field : "_____________";
   };
 
   template.push(

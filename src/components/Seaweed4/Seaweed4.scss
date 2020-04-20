@@ -5,8 +5,11 @@
   width: 300px;
 
   @include media-breakpoint-up(md) {
-    right: 5%;
     width: 400px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    right: 5%;
   }
 
   &__img {

@@ -5,8 +5,11 @@
   width: 150px;
 
   @include media-breakpoint-up(md) {
-    left: 15%;
     width: 250px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    left: 15%;
   }
 
   &__img {

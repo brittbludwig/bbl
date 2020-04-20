@@ -15,8 +15,6 @@ const Contact = ({ header, content }) => {
     const formFields = globalState.state.formFields;
     const emailTemplate = globalState.state.emailTemplate;
 
-    console.log("formFields", formFields);
-
     const formData = showBlankTemplate
       ? {
           name: emailTemplate.name,
