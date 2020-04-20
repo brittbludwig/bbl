@@ -28,6 +28,8 @@ export const contactForm = {
   name: "Name",
   email: "Email Address",
   message: "Message",
+  thanks: "Thank You! Your message has been sent",
+  close: "Close",
 };
 
 export const footer = {
