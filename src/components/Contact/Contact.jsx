@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import { store } from "../../store/store";
-import { sendFormData } from "../../utilities/services/services";
+import { sendFormData } from "../../services/services";
 import { contactForm, sections } from "../../static/labels/labels";
 import Button from "../Button/Button";
 import ContactPrepop from "./ContactPrepop";
