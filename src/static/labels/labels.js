@@ -9,6 +9,7 @@ export const sections = {
   section4: "section4",
   section5: "section5",
   section6: "section6",
+  section7: "section7",
 };
 
 export const skillCategories = {

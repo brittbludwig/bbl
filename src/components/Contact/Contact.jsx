@@ -1,15 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
-import { contactForm } from "../../static/labels/labels";
-
+import { store } from "../../store/store";
+import { sendFormData } from "../../utilities/services/services";
+import { contactForm, sections } from "../../static/labels/labels";
 import Button from "../Button/Button";
 import ContactPrepop from "./ContactPrepop";
 import ContactForm from "./ContactForm";
 
 const Contact = ({ header, content }) => {
+  const globalState = useContext(store);
   const [showBlankTemplate, setBlankTemplate] = useState(false);
 
-  const sendEmail = () => {};
+  const sendEmail = () => {
+    const formFields = globalState.state.formFields;
+    const emailTemplate = globalState.state.emailTemplate;
+
+    console.log("formFields", formFields);
+
+    const formData = showBlankTemplate
+      ? {
+          name: emailTemplate.name,
+          email: emailTemplate.email,
+          message: emailTemplate.message,
+        }
+      : {
+          name: formFields[sections.section1],
+          email: formFields[sections.section7],
+          message: formFields[sections.section3],
+        };
+
+    sendFormData(formData)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch(() => {
+        console.log("Message not sent");
+      });
+  };
 
   const toggleBlankForm = () => {
     setBlankTemplate(!showBlankTemplate);

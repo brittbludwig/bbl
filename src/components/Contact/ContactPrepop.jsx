@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { store } from "../../store/store";
+import { sections } from "../../static/labels/labels";
 import Field from "../Field/Field";
 
 const ContactPrepop = ({ content }) => {
@@ -20,7 +21,7 @@ const ContactPrepop = ({ content }) => {
   };
 
   let template = [];
-  let skills = fields[`section${3}`].join(", ");
+  let skills = fields[sections.section3].join(", ");
 
   const checkValue = (field) => {
     return field.length > 0 ? field : "________";
@@ -28,20 +29,20 @@ const ContactPrepop = ({ content }) => {
 
   template.push(
     <div className="Contact__block" key={1}>
-      {content[0]} {checkValue(fields[`section${1}`])}.
+      {content[0]} {checkValue(fields[sections.section1])}.
     </div>
   );
   template.push(
     <div className="Contact__block" key={2}>
-      {content[1]} {checkValue(fields[`section${2}`])}.
+      {content[1]} {checkValue(fields[sections.section2])}.
     </div>
   );
   template.push(
     <div className="Contact__block" key={3}>
       {content[2]} {checkValue(skills)} {content[3]} {content[4]}{" "}
-      {checkValue(fields[`section${4}`])}
+      {checkValue(fields[sections.section4])}
       {". "}
-      {content[5]} {checkValue(fields[`section${5}`])} {content[6]}{" "}
+      {content[5]} {checkValue(fields[sections.section5])} {content[6]}{" "}
       <div className="Contact__field">
         <Field handleChange={handleChange} />
       </div>
@@ -49,8 +50,8 @@ const ContactPrepop = ({ content }) => {
   );
   template.push(
     <div className="Contact__block" key={4}>
-      <div>{checkValue(fields[`section${6}`])},</div>
-      {checkValue(fields[`section${1}`])}
+      <div>{checkValue(fields[sections.section6])},</div>
+      {checkValue(fields[sections.section1])}
     </div>
   );
   return template;
