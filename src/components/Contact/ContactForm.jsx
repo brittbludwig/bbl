@@ -17,7 +17,6 @@ const ContactForm = () => {
     }
   };
 
-  console.log("global state", globalState);
   return (
     <div className="Contact__blank">
       <div className="Contact__block">

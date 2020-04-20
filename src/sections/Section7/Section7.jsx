@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "reactstrap";
+import { footer } from "../../static/labels/labels";
 import Section7Background from "../../sections/Section7/Section7Background";
 import Contact from "../../components/Contact/Contact";
 
@@ -25,7 +26,9 @@ const Section7 = ({ sectionHeader, sectionContent, sectionId }) => {
             xs={12}
             className="
               Section7__footer"
-          ></Col>
+          >
+            {footer.copyright}
+          </Col>
         </Row>
       </Container>
     </div>
@@ -36,14 +39,12 @@ Section7.defaultProps = {
   sectionHeader: "",
   sectionContent: [],
   sectionId: "",
-  fieldContent: "",
 };
 
 Section7.propTypes = {
   sectionHeader: PropTypes.string,
   sectionContent: PropTypes.array,
   sectionId: PropTypes.string,
-  fieldContent: PropTypes.string,
 };
 
 export default Section7;
