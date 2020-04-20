@@ -18,7 +18,6 @@
   }
 
   &__thank-you {
-    @include boxStyles();
     background-color: $white;
     border-radius: 0.5rem;
     display: none;

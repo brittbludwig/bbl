@@ -10,7 +10,7 @@ import ContactForm from "./ContactForm";
 const Contact = ({ header, content }) => {
   const globalState = useContext(store);
   const [showBlankTemplate, setBlankTemplate] = useState(false);
-  const [showFormModal, setFormModal] = useState(true);
+  const [showFormModal, setFormModal] = useState(false);
 
   const sendEmail = () => {
     const formFields = globalState.state.formFields;
