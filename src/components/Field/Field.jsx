@@ -1,35 +1,25 @@
-import React, { useContext } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { store } from "../../store/store";
 
-const Field = ({ section }) => {
-  const globalState = useContext(store);
-  const { dispatch } = globalState;
-  const activeField = section;
-
-  const handleChange = (value) => {
-    if (globalState.state.formFields.hasOwnProperty(activeField)) {
-      const newFieldSet = {
-        ...globalState.state.formFields,
-        [activeField]: value,
-      };
-      dispatch({ type: "UPDATE_FIELDS", formFields: newFieldSet });
-    }
-  };
-
+const Field = ({ handleChange, id }) => {
   return (
     <div className="Field">
-      <input type="text" onChange={(e) => handleChange(e.target.value)}></input>
+      <input
+        type="text"
+        onChange={(e) => handleChange(e.target.value, id)}
+      ></input>
     </div>
   );
 };
 
 Field.defaultProps = {
-  section: "",
+  handleChange: () => {},
+  id: "",
 };
 
 Field.propTypes = {
-  section: PropTypes.string,
+  handleChange: PropTypes.func,
+  id: PropTypes.string,
 };
 
 export default Field;

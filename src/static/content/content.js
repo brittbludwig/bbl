@@ -14,7 +14,7 @@ const content = [
     id: "section2",
     header: "Places I've worked",
     formText: "What is your job?",
-    resume: [
+    content: [
       {
         place: "ConsumerTrack",
         date: "10/2019 - 03/2020",
@@ -46,7 +46,7 @@ const content = [
     id: "section3",
     header: "Skills",
     formText: "Filter",
-    skills: [
+    content: [
       {
         name: "HTML",
         type: "languages",
@@ -237,8 +237,8 @@ const content = [
     name: "Clients",
     id: "section4",
     header: "Clients",
-    formText: "Pick an adverb",
-    clients: [
+    formText: "Pick an adjective",
+    content: [
       "Walmart",
       "Humana",
       "PayPal",
@@ -274,8 +274,8 @@ const content = [
     name: "Links",
     id: "section6",
     header: "Links",
-    formText: "Pick an adjective",
-    links: [
+    formText: "Pick an adverb",
+    content: [
       {
         url: "https://github.com/brittbludwig/",
         title: "GitHub",
@@ -289,7 +289,17 @@ const content = [
   {
     name: "Contact",
     id: "section7",
-    inspiration: ["David Bowie", "Prince", "Bob Ross"],
+    header: "Contact",
+    formText: "Pick an adjective",
+    content: [
+      "Hi! My name is",
+      "I'm a",
+      "I have a project that uses",
+      "and I'd like to talk to you more about it.",
+      "It should be really",
+      "Please contact me via",
+      "at",
+    ],
   },
 ];
 

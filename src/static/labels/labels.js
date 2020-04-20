@@ -9,6 +9,7 @@ export const sections = {
   section4: "section4",
   section5: "section5",
   section6: "section6",
+  section7: "section7",
 };
 
 export const skillCategories = {
@@ -18,4 +19,18 @@ export const skillCategories = {
   certifications: "Certifications",
   languages: "Languages",
   programs: "Programs",
+};
+
+export const contactForm = {
+  send: "Send Email",
+  write: "Write your own",
+  cancel: "Cancel",
+  name: "Name",
+  email: "Email Address",
+  message: "Message",
+};
+
+export const footer = {
+  copyright:
+    "© 2020 Brittany Ludwig. Inspired by David Bowie, Prince, and Bob Ross",
 };

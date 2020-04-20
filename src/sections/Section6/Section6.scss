@@ -14,14 +14,11 @@
   }
 
   &__content {
+    @include portraitMargin();
     width: 100%;
 
     @include media-breakpoint-up(md) {
       width: 80%;
-    }
-
-    @media only screen and (min-device-width: 375px) and (orientation: portrait) {
-      margin-top: 33%;
     }
   }
 

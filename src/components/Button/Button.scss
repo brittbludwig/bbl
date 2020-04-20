@@ -11,9 +11,20 @@
     outline: 0;
   }
 
+  &:last-of-type {
+    margin-right: 0;
+  }
+
   &__transparent {
     &--selected {
       color: $dark-purple;
     }
+  }
+
+  &__light {
+    background-color: $white;
+    color: $dark-blue;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
   }
 }

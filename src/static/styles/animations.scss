@@ -113,43 +113,23 @@
   }
 }
 
-// Bass Left
-@keyframes bassLeft {
+// Animate from Left
+@keyframes inFromLeft {
   0% {
-    left: -500px;
+    left: -800px;
   }
   100% {
     left: 120%;
   }
 }
 
-// Birds Right
-@keyframes birdsRight {
+// Animate from Right
+@keyframes inFromRight {
   0% {
     right: -500px;
   }
   100% {
     right: 120%;
-  }
-}
-
-// Trout Right
-@keyframes troutRight {
-  0% {
-    right: -500px;
-  }
-  100% {
-    right: 120%;
-  }
-}
-
-// Turtle Left
-@keyframes turtleLeft {
-  0% {
-    left: -500px;
-  }
-  100% {
-    left: 120%;
   }
 }
 

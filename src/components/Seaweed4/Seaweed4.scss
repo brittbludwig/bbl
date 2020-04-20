@@ -1,0 +1,18 @@
+.Seaweed4 {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  width: 300px;
+
+  @include media-breakpoint-up(md) {
+    width: 400px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    right: 5%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

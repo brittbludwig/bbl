@@ -17,7 +17,7 @@
   }
 
   &.active {
-    animation: bassLeft 6s linear 4s forwards;
+    animation: inFromLeft 6s linear 4s forwards;
 
     .Bass__img {
       animation: fourFrameAnimation 0.8s steps(4) infinite;
