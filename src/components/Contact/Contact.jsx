@@ -10,6 +10,7 @@ import ContactForm from "./ContactForm";
 const Contact = ({ header, content }) => {
   const globalState = useContext(store);
   const [showBlankTemplate, setBlankTemplate] = useState(false);
+  const [showFormModal, setFormModal] = useState(true);
 
   const sendEmail = () => {
     const formFields = globalState.state.formFields;
@@ -29,11 +30,15 @@ const Contact = ({ header, content }) => {
 
     sendFormData(formData)
       .then((res) => {
-        console.log(res);
+        setFormModal(true);
       })
       .catch(() => {
         console.log("Message not sent");
       });
+  };
+
+  const closeModal = () => {
+    setFormModal(false);
   };
 
   const toggleBlankForm = () => {
@@ -42,6 +47,18 @@ const Contact = ({ header, content }) => {
 
   return (
     <div className="Contact">
+      <div
+        className={`flex-column justify-content-center Contact__thank-you ${
+          showFormModal ? "d-flex" : "d-none"
+        }`}
+      >
+        <div className="Contact__message pb-5">{contactForm.thanks}</div>
+        <Button
+          label={contactForm.close}
+          theme="dark"
+          handleClick={closeModal}
+        />
+      </div>
       <h2>{header}</h2>
       {showBlankTemplate ? (
         <ContactForm />
