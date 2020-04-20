@@ -1,8 +1,5 @@
 import axios from "axios";
 
-const url = "localhost:3000";
-
 export const sendFormData = (body) => {
-  console.log(body);
-  return axios.post(`https://${url}/request`, body);
+  return axios.post("http://www.brittanyludwig.com/2m-formmail.php", body);
 };

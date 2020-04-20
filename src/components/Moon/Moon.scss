@@ -4,12 +4,12 @@
   height: 150px;
 
   @include media-breakpoint-up(md) {
-    margin-top: 0%;
     margin-right: 0%;
     height: 200px;
   }
 
   @include media-breakpoint-up(lg) {
+    margin-top: 0%;
     margin-right: 0%;
     height: auto;
   }

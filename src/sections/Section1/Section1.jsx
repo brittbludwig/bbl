@@ -16,7 +16,7 @@ const Section1 = ({
     <div className="Section1" id={sectionId}>
       <Section1Background />
       <Container className="h-100 Section1__container">
-        <Row className="align-items-center justify-content-center h-100">
+        <Row className="align-items-center justify-content-center Section1__row">
           <Col
             xs={12}
             lg={6}

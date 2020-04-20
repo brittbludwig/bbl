@@ -20,6 +20,10 @@
     }
   }
 
+  &__row {
+    @include portraitMargin();
+  }
+
   &__content {
     @include boxSize();
     margin-top: 3rem;

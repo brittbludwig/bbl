@@ -13,6 +13,7 @@ import Section7 from "../../sections/Section7/Section7";
 const Main = () => {
   const globalState = useContext(store);
   const { dispatch } = globalState;
+  const activeSection = globalState.state.activeSection;
 
   useEffect(() => {
     const onScroll = (e) => {
@@ -26,6 +27,7 @@ const Main = () => {
 
           if (sectionCoords.top >= -200 && sectionCoords.top <= 200) {
             visibleSection = item.id;
+            // window.location.hash = `#${item.id}`;
           }
         }
       });
@@ -37,7 +39,7 @@ const Main = () => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [dispatch]);
+  }, [dispatch, activeSection]);
 
   return (
     <div className="Main">

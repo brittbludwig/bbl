@@ -4,16 +4,16 @@
   transition: all 1s linear;
   z-index: $cloud-z-index;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     max-width: 500px;
   }
 
   &--left {
-    max-width: 370px;
+    max-width: 350px;
     bottom: 0px;
     left: -650px;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       max-width: 650px;
     }
 

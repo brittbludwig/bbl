@@ -154,9 +154,12 @@
     right: 50%;
     transform: scaleX(-1);
   }
-
+  90% {
+    right: -300%;
+    transform: scaleX(-1);
+  }
   100% {
-    right: -120%;
+    right: -300%;
     transform: scaleX(-1);
   }
 }
