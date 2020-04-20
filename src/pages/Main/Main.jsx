@@ -15,8 +15,6 @@ const Main = () => {
   const { dispatch } = globalState;
   const activeSection = globalState.state.activeSection;
 
-  console.log("window.location.href", window.location.href);
-
   useEffect(() => {
     const onScroll = (e) => {
       let visibleSection = "";
