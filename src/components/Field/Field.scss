@@ -1,8 +1,12 @@
 .Field {
-  background-color: $white;
-  border-radius: 0.5rem;
-  padding: 0.25rem 1rem;
   width: 100%;
+
+  input {
+    background-color: $white;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    width: 100%;
+  }
 
   @include media-breakpoint-up(lg) {
     width: auto;

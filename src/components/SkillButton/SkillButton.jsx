@@ -20,7 +20,7 @@ const SkillButton = ({ name }) => {
 
   return (
     <Button
-      theme="transparent"
+      theme="primary"
       label={name}
       handleClick={handleClick}
       isSelected={isSelected}

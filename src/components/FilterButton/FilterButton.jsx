@@ -25,7 +25,7 @@ const FilterButton = ({ skill }) => {
 
   return (
     <Button
-      theme="transparent"
+      theme="primary"
       label={skillCategories[skill]}
       handleClick={handleClick}
       isSelected={isSelected}
