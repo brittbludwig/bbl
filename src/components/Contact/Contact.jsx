@@ -15,6 +15,7 @@ const Contact = ({ header, content }) => {
   const sendEmail = () => {
     const formFields = globalState.state.formFields;
     const emailTemplate = globalState.state.emailTemplate;
+    const madlibFormContent = document.getElementById("prepopForm").textContent;
 
     const formData = showBlankTemplate
       ? {
@@ -25,7 +26,7 @@ const Contact = ({ header, content }) => {
       : {
           name: formFields[sections.section1],
           email: formFields[sections.section7],
-          message: formFields[sections.section3],
+          message: madlibFormContent,
         };
 
     sendFormData(formData)
@@ -63,7 +64,9 @@ const Contact = ({ header, content }) => {
       {showBlankTemplate ? (
         <ContactForm />
       ) : (
-        <ContactPrepop content={content} />
+        <div id="prepopForm">
+          <ContactPrepop content={content} />
+        </div>
       )}
       <div className="Contact__buttons d-flex flex-column flex-md-row justify-content-between px-0">
         <Button
