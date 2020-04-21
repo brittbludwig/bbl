@@ -4,6 +4,10 @@
   padding: 0.25rem 1rem;
   width: 100%;
 
+  input {
+    width: 100%;
+  }
+
   @include media-breakpoint-up(lg) {
     width: auto;
   }
