@@ -16,6 +16,10 @@ const content = [
     formText: "What is your job?",
     content: [
       {
+        place: "Bluebeam, Inc.",
+        date: "05/2020 - Present",
+      },
+      {
         place: "ConsumerTrack",
         date: "10/2019 - 03/2020",
       },
